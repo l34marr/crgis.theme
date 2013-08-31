@@ -1,0 +1,130 @@
+#visual-portal-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+body {
+  font: 100% Arial, FreeSans, sans-serif;
+  background: #9a7f51;
+  color: Black;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "標楷體", "Helvetica Neue", Arial, FreeSans, sans-serif;
+  font-weight: bold;
+  color: Black;
+  line-height: 1.5em;
+}
+
+#portal-top {
+  background: #fff url(++resource++crgis.theme/banner.jpg) no-repeat top left;
+}
+
+#portal-top div.width-full {
+  width: 100%;
+}
+#portal-top div.position-0 {
+  margin-left: -100%;
+}
+
+#portal-logo {
+  margin: 2em 0em 3.25em 0.75em;
+}
+
+#portal-globalnav {
+  font: 115% "標楷體", Arial, FreeSans, sans-serif;
+  background: #C00100;
+}
+#portal-globalnav li a {
+  padding: 2px 15px;
+  min-width: 30px;
+}
+#portal-globalnav a:link, #portal-globalnav a:visited {
+    color: White;
+}
+#portal-globalnav .selected a {
+  background: Orange;
+}
+#portal-globalnav a:hover {
+  background: Yellow;
+  color: #205c90;
+}
+#portal-globalnav .selected a:hover {
+  background: Yellow;
+  color: #205c90;
+}
+
+#portal-columns {
+  background: White;
+}
+
+#portal-footer-wrapper {
+  background: #fff url(++resource++crgis.theme/footer.jpg) no-repeat bottom;
+  text-align: center;
+  font-size: 75%;
+}
+
+.section-temples #portal-top { 
+  background: #fff url(++resource++crgis.theme/banner-t.jpg) no-repeat top;
+}
+
+#LSResult {
+  z-index: 10000; /* workaround for live search */
+}
+
+/* for webcouturier.dropdownmenu */
+#portal-globalnav ul {
+  width: 165px;
+}
+#portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover {
+  border-style: none;
+}
+
+/* for portlets */
+.odd {
+  background-color: transparent;
+}
+.even {
+  background-color: #f4f4e7;
+}
+dl.portlet {
+  background-color: #ecead6;
+}
+dt.portletHeader {
+  background: #cccac6;
+}
+dl.portlet dd.portletFooter {
+  background: #dddbca;
+  text-align: right;
+  padding: 5px;
+}
+
+/* for temple_folder */
+.templeAlbumEntry {
+  float: left;
+  position:relative;
+  overflow: hidden;
+  height: 85px;
+  width: 143px;
+  margin: 0em;
+  padding: 0px 6px 0px 9px;
+  text-align: center;
+  background-image: url('&dtml-portal_url;/polaroid-temple.png');
+  background-repeat: no-repeat;
+}
+.templeAlbumEntryWrapper {
+  /*display: block;*/
+  height: 30px;
+  width: 128px;
+  margin-bottom: 7px;
+}
+.templeAlbumEntryTitle {
+  display: block;
+  margin-top: 2em;
+}
+
+/* for atcontents */
+#content p {
+  margin-bottom: 0;
+}
+
