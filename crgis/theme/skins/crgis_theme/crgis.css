@@ -33,11 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #portal-globalnav {
   font: 115% "標楷體", Arial, FreeSans, sans-serif;
-  background: #C00100;
+  background: #c00100;
 }
 #portal-globalnav li a {
   padding: 2px 15px;
   min-width: 30px;
+  background: #c00100;
 }
 #portal-globalnav a:link, #portal-globalnav a:visited {
     color: White;
@@ -97,30 +98,6 @@ dl.portlet dd.portletFooter {
   background: #dddbca;
   text-align: right;
   padding: 5px;
-}
-
-/* for temple_folder */
-.templeAlbumEntry {
-  float: left;
-  position:relative;
-  overflow: hidden;
-  height: 85px;
-  width: 143px;
-  margin: 0em;
-  padding: 0px 6px 0px 9px;
-  text-align: center;
-  background-image: url('&dtml-portal_url;/polaroid-temple.png');
-  background-repeat: no-repeat;
-}
-.templeAlbumEntryWrapper {
-  /*display: block;*/
-  height: 30px;
-  width: 128px;
-  margin-bottom: 7px;
-}
-.templeAlbumEntryTitle {
-  display: block;
-  margin-top: 2em;
 }
 
 /* for atcontents */
