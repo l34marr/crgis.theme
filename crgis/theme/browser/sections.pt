@@ -1,0 +1,154 @@
+<tal:sections i18n:domain="crgis.theme">
+<p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
+
+<ul id="portal-globalnav"
+ tal:define="root_url context/@@plone_portal_state/navigation_root_url">
+  <li id="portaltab-index_html">
+   <a href="#"
+    tal:attributes="href string:${root_url}">
+    Home</a>
+  </li>
+  <li id="portaltab-cultural-properties" class="plain">
+   <a href="#"
+    tal:attributes="href string:${root_url}/cultural-properties">
+    Properties</a>
+    <ul class="submenu">
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/cultural-properties/tangible">
+        Tangible</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/cultural-properties/intangible">
+        Intangible</a>
+      </li>
+    </ul>
+  </li>
+  <li id="portaltab-temples" class="plain">
+   <a href="#"
+    tal:attributes="href string:${root_url}/temples">
+    Temples</a>
+    <ul class="submenu">
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/KeelungCity">
+        Keelung City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/TaipeiCity">
+        Taipei City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/NewTaipeiCity">
+        New Taipei City</a>
+      </li>
+    </ul>
+  </li>
+  <li id="portaltab-spatial" class="plain">
+   <a href="#"
+    tal:attributes="href string:${root_url}/spatial">
+    Spatial</a>
+    <ul class="submenu">
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/spatial/webgis">
+        Web GIS</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/spatial/atlas">
+        Atlas</a>
+      </li>
+    </ul>
+  </li>
+  <li id="portaltab-news-events" class="plain">
+   <a href="#"
+    tal:attributes="href string:${root_url}/news-events">
+    Info</a>
+    <ul class="submenu">
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/news-events/knowledge">
+        Knowledge</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/news-events/news">
+        News</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/news-events/events">
+        Events</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/news-events/festival">
+        Festival</a>
+      </li>
+    </ul>
+  </li>
+  <li id="portaltab-studies" class="plain">
+   <a href="#"
+    tal:attributes="href string:${root_url}/studies">
+    Studies</a>
+    <ul class="submenu">
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/studies/cases">
+        Cases</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/studies/topics">
+        Topics</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/studies/3">
+        Pilgrimage</a>
+      </li>
+    </ul>
+  </li>
+  <li id="portaltab-resources" class="plain">
+   <a href="#"
+    tal:attributes="href string:${root_url}/resources">
+    Resources</a>
+    <ul class="submenu">
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/resources/references">
+        References</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/resources/groups">
+        Groups</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/resources/internet">
+        Online</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/resources/gis">
+        GIS</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/resources/data_download">
+        Data Download</a>
+      </li>
+    </ul>
+  </li>
+  <li id="portaltab-about-us" class="plain">
+   <a href="#"
+    tal:attributes="href string:${root_url}/about-us">
+    About Us</a>
+  </li>
+</ul>
+</tal:sections>

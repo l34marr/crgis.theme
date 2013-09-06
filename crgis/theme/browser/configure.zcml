@@ -10,4 +10,13 @@
       layer="crgis.theme.interfaces.ICustomTheme"
       />
 
+  <browser:viewlet
+      name="plone.global_sections"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+      template="sections.pt"
+      permission="zope2.View"
+      layer="crgis.theme.interfaces.ICustomTheme"
+      />
+
 </configure>
