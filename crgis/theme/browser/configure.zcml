@@ -6,6 +6,7 @@
       name="plone.logo"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.LogoViewlet"
+      template="logo.pt"
       permission="zope2.View"
       layer="crgis.theme.interfaces.ICustomTheme"
       />
