@@ -25,7 +25,8 @@
   }
 #portal-globalnav li a {
   display:block;
-  border-top: 1px solid #fff;
+  /* border-top: 1px solid #fff; */
+  border-right: 0px;
   }
 
 /*----- DropDown -----*/
@@ -44,7 +45,7 @@ ul.submenu li {
   }
 #portal-globalnav ul.submenu li a {
   padding:0.5em 1.5em 0.5em 1em;
-  width:12em;
+  width: 165px;
   }
 
 
