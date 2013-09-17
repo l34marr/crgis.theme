@@ -8,4 +8,11 @@
    enabled="on" expression=""
    media="screen" rel="stylesheet" rendering="link" />
 
+ <stylesheet
+   id="++resource++crgis.theme/dropdown-menu.css"
+   insert-before="ploneCustom.css"
+   cacheable="True" compression="safe" cookable="True"
+   enabled="on" expression=""
+   media="screen" rel="stylesheet" rendering="link" />
+
 </object>

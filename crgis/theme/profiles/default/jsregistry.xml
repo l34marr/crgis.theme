@@ -13,11 +13,10 @@
       - 'cookable' (optional - default: True): boolean (aka 'merging allowed')
       See registerScript() arguments in ResourceRegistries/tools/JSRegistry.py
       for the latest list of all available keys and default values. -->
-<!--
+
  <javascript
-   id="++resource++crgis.theme/main.js"
+   id="++resource++crgis.theme/dropdown.js"
    cacheable="False" compression="safe" cookable="False"
    enabled="True" expression="" inline="False" />
--->
 
 </object>
