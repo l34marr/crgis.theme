@@ -5,29 +5,34 @@
  tal:define="root_url context/@@plone_portal_state/navigation_root_url">
   <li id="portaltab-index_html">
    <a href="#"
-    tal:attributes="href string:${root_url}">
+    tal:attributes="href string:${root_url}"
+    i18n:translate="">
     Home</a>
   </li>
   <li id="portaltab-cultural-properties" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/cultural-properties">
+    tal:attributes="href string:${root_url}/cultural-properties"
+    i18n:translate="">
     Properties</a>
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/cultural-properties/tangible">
+        tal:attributes="href string:${root_url}/cultural-properties/tangible"
+        i18n:translate="">
         Tangible</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/cultural-properties/intangible">
+        tal:attributes="href string:${root_url}/cultural-properties/intangible"
+        i18n:translate="">
         Intangible</a>
       </li>
     </ul>
   </li>
   <li id="portaltab-temples" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/temples">
+    tal:attributes="href string:${root_url}/temples"
+    i18n:translate="">
     Temples</a>
     <ul class="submenu">
       <li>
@@ -166,105 +171,124 @@
   </li>
   <li id="portaltab-spatial" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/spatial">
+    tal:attributes="href string:${root_url}/spatial"
+    i18n:translate="">
     Spatial</a>
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/spatial/webgis">
+        tal:attributes="href string:${root_url}/spatial/webgis"
+        i18n:translate="">
         Web GIS</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/spatial/atlas">
+        tal:attributes="href string:${root_url}/spatial/atlas"
+        i18n:translate="">
         Atlas</a>
       </li>
     </ul>
   </li>
   <li id="portaltab-news-events" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/news-events">
+    tal:attributes="href string:${root_url}/news-events"
+    i18n:translate="">
     Info</a>
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/knowledge">
+        tal:attributes="href string:${root_url}/news-events/knowledge"
+        i18n:translate="">
         Knowledge</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/news">
+        tal:attributes="href string:${root_url}/news-events/news"
+        i18n:translate="">
         News</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/events">
+        tal:attributes="href string:${root_url}/news-events/events"
+        i18n:translate="">
         Events</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/festival">
+        tal:attributes="href string:${root_url}/news-events/festival"
+        i18n:translate="">
         Festival</a>
       </li>
     </ul>
   </li>
   <li id="portaltab-studies" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/studies">
+    tal:attributes="href string:${root_url}/studies"
+    i18n:translate="">
     Studies</a>
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/studies/cases">
+        tal:attributes="href string:${root_url}/studies/cases"
+        i18n:translate="">
         Cases</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/studies/topics">
+        tal:attributes="href string:${root_url}/studies/topics"
+        i18n:translate="">
         Topics</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/studies/3">
+        tal:attributes="href string:${root_url}/studies/3"
+        i18n:translate="">
         Pilgrimage</a>
       </li>
     </ul>
   </li>
   <li id="portaltab-resources" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/resources">
+    tal:attributes="href string:${root_url}/resources"
+    i18n:translate="">
     Resources</a>
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/resources/references">
+        tal:attributes="href string:${root_url}/resources/references"
+        i18n:translate="">
         References</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/resources/groups">
+        tal:attributes="href string:${root_url}/resources/groups"
+        i18n:translate="">
         Groups</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/resources/internet">
+        tal:attributes="href string:${root_url}/resources/internet"
+        i18n:translate="">
         Online</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/resources/gis">
+        tal:attributes="href string:${root_url}/resources/gis"
+        i18n:translate="">
         GIS</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/resources/data_download">
+        tal:attributes="href string:${root_url}/resources/data_download"
+        i18n:translate="">
         Data Download</a>
       </li>
     </ul>
   </li>
   <li id="portaltab-about-us" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/about-us">
+    tal:attributes="href string:${root_url}/about-us"
+    i18n:translate="">
     About Us</a>
   </li>
 </ul>
