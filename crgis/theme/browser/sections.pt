@@ -32,18 +32,135 @@
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/temples/KeelungCity">
+        tal:attributes="href string:${root_url}/temples/KeelungCity"
+        i18n:translate="">
         Keelung City</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/temples/TaipeiCity">
+        tal:attributes="href string:${root_url}/temples/TaipeiCity"
+        i18n:translate="">
         Taipei City</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/temples/NewTaipeiCity">
+        tal:attributes="href string:${root_url}/temples/NewTaipeiCity"
+        i18n:translate="">
         New Taipei City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/TaoyuanCounty"
+        i18n:translate="">
+        Taoyuan County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/HsinchuCounty"
+        i18n:translate="">
+        Hsinchu County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/HsinchuCity"
+        i18n:translate="">
+        Hsinchu City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/MiaoliCounty"
+        i18n:translate="">
+        Miaoli County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/TaichungCity"
+        i18n:translate="">
+        Taichung City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/NantouCounty"
+        i18n:translate="">
+        Nantou County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/ChanghuaCounty"
+        i18n:translate="">
+        Changhua County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/YunlinCounty"
+        i18n:translate="">
+        Yunlin County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/ChiayiCity"
+        i18n:translate="">
+        Chiayi City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/ChiayiCounty"
+        i18n:translate="">
+        Chiayi County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/TainanCity"
+        i18n:translate="">
+        Tainan City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/KaohsiungCity"
+        i18n:translate="">
+        Kaohsiung City</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/PingtungCounty"
+        i18n:translate="">
+        Pingtung County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/YilanCounty"
+        i18n:translate="">
+        Yilan County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/HualienCounty"
+        i18n:translate="">
+        Hualien County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/TaitungCounty"
+        i18n:translate="">
+        Taitung County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/PenghuCounty"
+        i18n:translate="">
+        Penghu County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/LienchiangCounty"
+        i18n:translate="">
+        Lienchiang County</a>
+      </li>
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/temples/KinmenCounty"
+        i18n:translate="">
+        Kinmen County</a>
       </li>
     </ul>
   </li>
