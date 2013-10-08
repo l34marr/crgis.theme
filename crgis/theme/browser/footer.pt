@@ -10,11 +10,11 @@
       &copy;</acronym>
      2009-<tal:year i18n:name="current_year" tal:content="view/year" />
     </span><br />
-    <span i18n:translate="best_resolution">
+    <span i18n:translate="best_viewed">
      Best viewed with 1024x768 resolution
      in Internet Explorer 7.0 / Firefox 3.6 or higher
     </span><br />
-    <span i18n:translate="contact_address">
+    <span i18n:translate="contact_info">
      Tel: (02)27821693 Fax: (02)27898191
      Address: 128 Academia Road, Section 2, Nankang, Taipei 115, Taiwan
     </span>
