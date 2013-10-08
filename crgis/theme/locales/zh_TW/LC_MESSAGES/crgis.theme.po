@@ -16,7 +16,7 @@ msgstr ""
 
 #: ./browser/sections.pt:289
 msgid "About Us"
-msgstr ""
+msgstr "關於本系統"
 
 #: ./browser/sections.pt:185
 msgid "Atlas"
@@ -124,7 +124,7 @@ msgstr ""
 
 #: ./browser/sections.pt:153
 msgid "Penghu County"
-msgstr ""
+msgstr "澎湖縣"
 
 #: ./browser/sections.pt:243
 msgid "Pilgrimage"
@@ -180,7 +180,7 @@ msgstr "桃園縣"
 
 #: ./browser/sections.pt:33
 msgid "Temples"
-msgstr ""
+msgstr "寺廟資料"
 
 #: ./browser/sections.pt:237
 msgid "Topics"
@@ -206,7 +206,7 @@ msgstr "‧最佳瀏覽狀態：Internet Explorer 7.0 或 Firefox 3.6 以上版�
 #. Default: "Tel: (02)27821693 Fax: (02)27898191 Address: 128 Academia Road, Section 2, Nankang, Taipei 115, Taiwan"
 #: ./browser/footer.pt:17
 msgid "contact_info"
-msgstr "‧電話：(02)27821693‧ 傳真：(02)27898191 ‧地址：115 台北市南港區研究院路>二段 128 號"
+msgstr "‧電話：(02)27821693‧ 傳真：(02)27898191 ‧地址：115 台北市南港區研究院路二段 128 號"
 
 #. Default: "Center for GIS, RCHSS, Academia Sinica ${copyright} 2009-${current_year}"
 #: ./browser/footer.pt:11
@@ -221,5 +221,5 @@ msgstr "Copyright"
 #. Default: "Navigation"
 #: ./browser/sections.pt:2
 msgid "heading_sections"
-msgstr ""
+msgstr "導覽"
 
