@@ -20,4 +20,13 @@
       layer="crgis.theme.interfaces.ICustomTheme"
       />
 
+  <browser:viewlet
+      name="plone.footer"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class="plone.app.layout.viewlets.common.FooterViewlet"
+      template="footer.pt"
+      permission="zope2.View"
+      layer="crgis.theme.interfaces.ICustomTheme"
+      />
+
 </configure>
