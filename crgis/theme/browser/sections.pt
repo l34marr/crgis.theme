@@ -275,7 +275,7 @@
        <a href="#"
         tal:attributes="href string:${root_url}/resources/gis"
         i18n:translate="">
-        GIS</a>
+        Technology</a>
       </li>
       <li>
        <a href="#"

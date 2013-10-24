@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-10-08 13:05+0000\n"
+"POT-Creation-Date: 2013-10-24 10:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Festival"
 msgstr ""
 
-#: ./browser/sections.pt:275
+#: ./browser/sections.pt:173
 msgid "GIS"
 msgstr ""
 
@@ -149,10 +149,6 @@ msgstr ""
 msgid "Resources"
 msgstr ""
 
-#: ./browser/sections.pt:173
-msgid "Spatial"
-msgstr ""
-
 #: ./browser/sections.pt:225
 msgid "Studies"
 msgstr ""
@@ -179,6 +175,10 @@ msgstr ""
 
 #: ./browser/sections.pt:57
 msgid "Taoyuan County"
+msgstr ""
+
+#: ./browser/sections.pt:275
+msgid "Technology"
 msgstr ""
 
 #: ./browser/sections.pt:33
