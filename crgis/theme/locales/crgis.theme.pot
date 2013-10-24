@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-10-24 10:00+0000\n"
+"POT-Creation-Date: 2013-10-24 13:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,5 +224,30 @@ msgstr ""
 #. Default: "Navigation"
 #: ./browser/sections.pt:2
 msgid "heading_sections"
+msgstr ""
+
+#. Default: "Event Listing"
+#: ./browser/frontpage.pt:61
+msgid "listing_event"
+msgstr ""
+
+#. Default: "News Listing"
+#: ./browser/frontpage.pt:13
+msgid "listing_news"
+msgstr ""
+
+#. Default: "More Events"
+#: ./browser/frontpage.pt:107
+msgid "more_events"
+msgstr ""
+
+#. Default: "More News"
+#: ./browser/frontpage.pt:56
+msgid "more_news"
+msgstr ""
+
+#. Default: "Read More"
+#: ./browser/frontpage.pt:47
+msgid "read_more"
 msgstr ""
 

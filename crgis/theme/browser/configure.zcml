@@ -29,4 +29,12 @@
       layer="crgis.theme.interfaces.ICustomTheme"
       />
 
+  <browser:page
+      for="*"
+      class=".frontpage.FrontPage"
+      name="frontpage"
+      template="frontpage.pt"
+      permission="zope2.View"
+      />
+
 </configure>

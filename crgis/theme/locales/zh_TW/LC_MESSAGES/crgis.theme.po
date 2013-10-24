@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.theme\n"
-"POT-Creation-Date: 2013-10-24 10:00+0000\n"
+"POT-Creation-Date: 2013-10-24 13:37+0000\n"
 "PO-Revision-Date: 2013-10-24 18:01+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
@@ -222,4 +222,29 @@ msgstr "Copyright"
 #: ./browser/sections.pt:2
 msgid "heading_sections"
 msgstr "導覽"
+
+#. Default: "Event Listing"
+#: ./browser/frontpage.pt:61
+msgid "listing_event"
+msgstr "會議展覽"
+
+#. Default: "News Listing"
+#: ./browser/frontpage.pt:13
+msgid "listing_news"
+msgstr "新聞消息"
+
+#. Default: "More Events"
+#: ./browser/frontpage.pt:107
+msgid "more_events"
+msgstr "更多活動"
+
+#. Default: "More News"
+#: ./browser/frontpage.pt:56
+msgid "more_news"
+msgstr "更多新聞"
+
+#. Default: "Read More"
+#: ./browser/frontpage.pt:47
+msgid "read_more"
+msgstr "閱讀全文"
 
