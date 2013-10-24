@@ -173,7 +173,7 @@
    <a href="#"
     tal:attributes="href string:${root_url}/spatial"
     i18n:translate="">
-    Spatial</a>
+    GIS</a>
     <ul class="submenu">
       <li>
        <a href="#"
