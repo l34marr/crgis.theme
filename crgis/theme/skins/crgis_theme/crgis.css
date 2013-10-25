@@ -105,3 +105,24 @@ dl.portlet dd.portletFooter {
   margin-bottom: 0;
 }
 
+/* for temple_folder */
+.templeAlbumEntry {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  height: 85px;
+  width: 143px;
+  margin: 0em;
+  padding: 0px 6px 0px 9px;
+  text-align: center;
+  background: #fff url(++resource++crgis.theme/polaroid.png) no-repeat top left;
+}
+.templeAlbumEntryWrapper {
+  height: 30px;
+  width: 128px;
+  margin-bottom: 7px;
+}
+.templeAlbumEntryTitle {
+  display: block;
+  margin-top: 2em;
+}
