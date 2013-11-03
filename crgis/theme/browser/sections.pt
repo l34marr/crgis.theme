@@ -13,7 +13,7 @@
    <a href="#"
     tal:attributes="href string:${root_url}/cultural-properties"
     i18n:translate="">
-    Properties</a>
+    Assets</a>
     <ul class="submenu">
       <li>
        <a href="#"
@@ -199,7 +199,7 @@
        <a href="#"
         tal:attributes="href string:${root_url}/news-events/knowledge"
         i18n:translate="">
-        Knowledge</a>
+        New Knowledge</a>
       </li>
       <li>
        <a href="#"
@@ -231,19 +231,19 @@
        <a href="#"
         tal:attributes="href string:${root_url}/studies/cases"
         i18n:translate="">
-        Cases</a>
+        Case Studies</a>
       </li>
       <li>
        <a href="#"
         tal:attributes="href string:${root_url}/studies/topics"
         i18n:translate="">
-        Topics</a>
+        Applications</a>
       </li>
       <li>
        <a href="#"
         tal:attributes="href string:${root_url}/studies/3"
         i18n:translate="">
-        Pilgrimage</a>
+        Pilgrimages</a>
       </li>
     </ul>
   </li>
@@ -263,7 +263,7 @@
        <a href="#"
         tal:attributes="href string:${root_url}/resources/groups"
         i18n:translate="">
-        Groups</a>
+        Related Groups</a>
       </li>
       <li>
        <a href="#"
@@ -275,13 +275,13 @@
        <a href="#"
         tal:attributes="href string:${root_url}/resources/gis"
         i18n:translate="">
-        Technology</a>
+        GIS Techniques</a>
       </li>
       <li>
        <a href="#"
         tal:attributes="href string:${root_url}/resources/data_download"
         i18n:translate="">
-        Data Download</a>
+        Downloads</a>
       </li>
     </ul>
   </li>
@@ -289,7 +289,7 @@
    <a href="#"
     tal:attributes="href string:${root_url}/about-us"
     i18n:translate="">
-    About Us</a>
+    About</a>
   </li>
 </ul>
 </tal:sections>

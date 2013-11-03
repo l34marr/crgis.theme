@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-10-24 13:37+0000\n"
+"POT-Creation-Date: 2013-11-03 02:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,15 @@ msgstr ""
 "Domain: crgis.theme\n"
 
 #: ./browser/sections.pt:289
-msgid "About Us"
+msgid "About"
+msgstr ""
+
+#: ./browser/sections.pt:237
+msgid "Applications"
+msgstr ""
+
+#: ./browser/sections.pt:13
+msgid "Assets"
 msgstr ""
 
 #: ./browser/sections.pt:185
@@ -26,7 +34,7 @@ msgid "Atlas"
 msgstr ""
 
 #: ./browser/sections.pt:231
-msgid "Cases"
+msgid "Case Studies"
 msgstr ""
 
 #: ./browser/sections.pt:93
@@ -42,7 +50,7 @@ msgid "Chiayi County"
 msgstr ""
 
 #: ./browser/sections.pt:281
-msgid "Data Download"
+msgid "Downloads"
 msgstr ""
 
 #: ./browser/sections.pt:211
@@ -57,8 +65,8 @@ msgstr ""
 msgid "GIS"
 msgstr ""
 
-#: ./browser/sections.pt:263
-msgid "Groups"
+#: ./browser/sections.pt:275
+msgid "GIS Techniques"
 msgstr ""
 
 #: ./browser/sections.pt:7
@@ -97,10 +105,6 @@ msgstr ""
 msgid "Kinmen County"
 msgstr ""
 
-#: ./browser/sections.pt:199
-msgid "Knowledge"
-msgstr ""
-
 #: ./browser/sections.pt:159
 msgid "Lienchiang County"
 msgstr ""
@@ -111,6 +115,10 @@ msgstr ""
 
 #: ./browser/sections.pt:87
 msgid "Nantou County"
+msgstr ""
+
+#: ./browser/sections.pt:199
+msgid "New Knowledge"
 msgstr ""
 
 #: ./browser/sections.pt:51
@@ -130,19 +138,19 @@ msgid "Penghu County"
 msgstr ""
 
 #: ./browser/sections.pt:243
-msgid "Pilgrimage"
+msgid "Pilgrimages"
 msgstr ""
 
 #: ./browser/sections.pt:129
 msgid "Pingtung County"
 msgstr ""
 
-#: ./browser/sections.pt:13
-msgid "Properties"
-msgstr ""
-
 #: ./browser/sections.pt:257
 msgid "References"
+msgstr ""
+
+#: ./browser/sections.pt:263
+msgid "Related Groups"
 msgstr ""
 
 #: ./browser/sections.pt:251
@@ -177,16 +185,8 @@ msgstr ""
 msgid "Taoyuan County"
 msgstr ""
 
-#: ./browser/sections.pt:275
-msgid "Technology"
-msgstr ""
-
 #: ./browser/sections.pt:33
 msgid "Temples"
-msgstr ""
-
-#: ./browser/sections.pt:237
-msgid "Topics"
 msgstr ""
 
 #: ./browser/sections.pt:179

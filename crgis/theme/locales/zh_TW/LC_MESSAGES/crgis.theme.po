@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.theme\n"
-"POT-Creation-Date: 2013-10-24 13:37+0000\n"
-"PO-Revision-Date: 2013-10-24 18:01+0800\n"
+"POT-Creation-Date: 2013-11-03 02:57+0000\n"
+"PO-Revision-Date: 2013-11-03 10:58+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -15,15 +15,23 @@ msgstr ""
 "Domain: crgis.theme\n"
 
 #: ./browser/sections.pt:289
-msgid "About Us"
+msgid "About"
 msgstr "關於本系統"
+
+#: ./browser/sections.pt:237
+msgid "Applications"
+msgstr "應用議題"
+
+#: ./browser/sections.pt:13
+msgid "Assets"
+msgstr "文化資產"
 
 #: ./browser/sections.pt:185
 msgid "Atlas"
 msgstr "主題圖冊"
 
 #: ./browser/sections.pt:231
-msgid "Cases"
+msgid "Case Studies"
 msgstr "研究案例"
 
 #: ./browser/sections.pt:93
@@ -39,7 +47,7 @@ msgid "Chiayi County"
 msgstr "嘉義縣"
 
 #: ./browser/sections.pt:281
-msgid "Data Download"
+msgid "Downloads"
 msgstr "資料下載"
 
 #: ./browser/sections.pt:211
@@ -54,9 +62,9 @@ msgstr "廟會節慶"
 msgid "GIS"
 msgstr "空間資訊"
 
-#: ./browser/sections.pt:263
-msgid "Groups"
-msgstr "相關團體"
+#: ./browser/sections.pt:275
+msgid "GIS Techniques"
+msgstr "空間資訊技術"
 
 #: ./browser/sections.pt:7
 msgid "Home"
@@ -94,10 +102,6 @@ msgstr "基隆市"
 msgid "Kinmen County"
 msgstr "金門縣"
 
-#: ./browser/sections.pt:199
-msgid "Knowledge"
-msgstr "新知提供"
-
 #: ./browser/sections.pt:159
 msgid "Lienchiang County"
 msgstr "連江縣"
@@ -109,6 +113,10 @@ msgstr "苗栗縣"
 #: ./browser/sections.pt:87
 msgid "Nantou County"
 msgstr "南投縣"
+
+#: ./browser/sections.pt:199
+msgid "New Knowledge"
+msgstr "新知提供"
 
 #: ./browser/sections.pt:51
 msgid "New Taipei City"
@@ -127,20 +135,20 @@ msgid "Penghu County"
 msgstr "澎湖縣"
 
 #: ./browser/sections.pt:243
-msgid "Pilgrimage"
+msgid "Pilgrimages"
 msgstr "民俗遶境專區"
 
 #: ./browser/sections.pt:129
 msgid "Pingtung County"
 msgstr "屏東縣"
 
-#: ./browser/sections.pt:13
-msgid "Properties"
-msgstr "文化資產"
-
 #: ./browser/sections.pt:257
 msgid "References"
 msgstr "參考文獻"
+
+#: ./browser/sections.pt:263
+msgid "Related Groups"
+msgstr "相關團體"
 
 #: ./browser/sections.pt:251
 msgid "Resources"
@@ -174,17 +182,9 @@ msgstr "有形文化資產"
 msgid "Taoyuan County"
 msgstr "桃園縣"
 
-#: ./browser/sections.pt:275
-msgid "Technology"
-msgstr "空間資訊技術"
-
 #: ./browser/sections.pt:33
 msgid "Temples"
 msgstr "寺廟資料"
-
-#: ./browser/sections.pt:237
-msgid "Topics"
-msgstr "應用議題"
 
 #: ./browser/sections.pt:179
 msgid "Web GIS"
