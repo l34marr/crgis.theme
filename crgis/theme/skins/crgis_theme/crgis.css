@@ -101,8 +101,14 @@ dl.portlet dd.portletFooter {
 }
 
 /* for atcontents */
+#content .documentDescription {
+  margin-bottom: 10px;
+}
 #content p {
-  margin-bottom: 0;
+  margin-bottom: 2px;
+}
+figure {
+  margin-bottom: 10px;
 }
 
 /* for temple_folder */
