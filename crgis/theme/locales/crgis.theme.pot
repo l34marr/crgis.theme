@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-11-23 04:57+0000\n"
+"POT-Creation-Date: 2013-11-23 08:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,7 @@ msgid "Both Plone and PostgreSQL are open source programs."
 msgstr ""
 
 #: ./browser/about.pt:20
-msgid "CRGIS (Culture Resources Geographic Information System, CRGIS) is maintained by the GIS Center at Academia Sinica."
+msgid "CRGIS (Culture Resources Geographic Information System) is maintained by the GIS Center at Academia Sinica."
 msgstr ""
 
 #: ./browser/about.pt:39

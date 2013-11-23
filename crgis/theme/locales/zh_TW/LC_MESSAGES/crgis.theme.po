@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.theme\n"
-"POT-Creation-Date: 2013-11-23 04:57+0000\n"
-"PO-Revision-Date: 2013-11-03 10:58+0800\n"
+"POT-Creation-Date: 2013-11-23 08:45+0000\n"
+"PO-Revision-Date: 2013-11-23 16:55+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -60,12 +60,12 @@ msgid "Both Plone and PostgreSQL are open source programs."
 msgstr "Plone 與 PostrgeSQL 均為開放源碼 (Open Source Software)。"
 
 #: ./browser/about.pt:20
-msgid "CRGIS (Culture Resources Geographic Information System, CRGIS) is maintained by the GIS Center at Academia Sinica."
-msgstr "文化資源地理資訊系統 (Culture Resources Geographic Information System ,CRGIS)，由中央研究院人文社會科學研究中心地理資訊科學研究專題中心所建置。"
+msgid "CRGIS (Culture Resources Geographic Information System) is maintained by the GIS Center at Academia Sinica."
+msgstr "文化資源地理資訊系統 (Culture Resources Geographic Information System ,CRGIS) 由中央研究院人文社會科學研究中心地理資訊科學研究專題中心所建置。"
 
 #: ./browser/about.pt:39
 msgid "CRGIS extensively collects basic geographic information including temples, old monuments, historic buildings, old trees and Fengshi Yeh (Wind Lion God) and incorporates the concept of Web2.0, encouraging the public to become involved so as to provide a more wholesome information platform."
-msgstr "CRGIS廣泛地蒐集包含寺廟、古蹟、歷史建築、老樹、風獅爺等文化資源基礎空間資訊 (圖 1)，並輔以 Web2.0 全民參與的概念，提供一完整資訊平台，"
+msgstr "CRGIS 廣泛地蒐集包含寺廟、古蹟、歷史建築、老樹、風獅爺等文化資源基礎空間資訊 (圖 1)，並輔以 Web2.0 全民參與的概念，提供一完整資訊平台，"
 
 #: ./browser/about.pt:77
 msgid "CRGIS is the most complete non-official platform providing information on cultural resources nationwide, integrating cultural resources in the general sense."
@@ -101,7 +101,7 @@ msgstr "諮詢與參與人員"
 
 #: ./browser/about.pt:52
 msgid "Cultural resources of locality features include 122 Fengshi Yeh."
-msgstr "地方性的文化資源如金門縣風獅爺122座等。"
+msgstr "地方性的文化資源如金門縣風獅爺 122 座等。"
 
 #: ./browser/about.pt:69
 msgid "Distribution of cultural resources"

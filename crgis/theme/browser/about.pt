@@ -18,7 +18,7 @@ About
 
 <metal:description define-slot="content-description">
 <div class="documentDescription" i18n:translate="">
-CRGIS (Culture Resources Geographic Information System, CRGIS) is maintained by the GIS Center at Academia Sinica.
+CRGIS (Culture Resources Geographic Information System) is maintained by the GIS Center at Academia Sinica.
 </div>
 </metal:description>
 
