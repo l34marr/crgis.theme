@@ -12,7 +12,7 @@
 
 <metal:title define-slot="content-title">
 <h1 class="documentFirstHeading" i18n:translate="">
-About Us
+About
 </h1>
 </metal:title>
 
@@ -29,7 +29,7 @@ CRGIS (Culture Resources Geographic Information System, CRGIS) is maintained by 
 <dt id="fieldsetlegend-unique-id2"
     i18n:translate="">Contributors</dt>
 <dt id="fieldsetlegend-unique-id3"
-    i18n:translate="">Field Work</dt>
+    i18n:translate="">Field Studies</dt>
 <dt id="fieldsetlegend-unique-id4"
     i18n:translate="">Team</dt>
 
@@ -39,7 +39,7 @@ CRGIS (Culture Resources Geographic Information System, CRGIS) is maintained by 
 <p><span i18n:translate="">CRGIS extensively collects basic geographic information including temples, old monuments, historic buildings, old trees and Fengshi Yeh (Wind Lion God) and incorporates the concept of Web2.0, encouraging the public to become involved so as to provide a more wholesome information platform.</span>
 <span i18n:translate="">Any sector, or person, who are involved are able to add new information, edit, manage, and make query on various tangible and intangible cultural resources which are exhibited in the form of images.</span></p>
 <figure>
-<img src="" alt="Fig. 1">
+<img src="fig1.png" alt="Fig. 1" width="100%">
 <figcaption i18n:translate="">Fig. 1: Cultural Resource Geographic Information System</figcaption>
 </figure>
 <p><span i18n:translate="">The structure of the system includes two parts: WebGIS and Content Management System.</span>
@@ -60,18 +60,18 @@ CRGIS (Culture Resources Geographic Information System, CRGIS) is maintained by 
 <span i18n:translate="">Other attribute date obtained from local gazettes and censuses finally amounting to a total of 7,400 temples.</span></p>
 <p><span i18n:translate="">CRGIS mainly records two types of data – the locations of temples on GPS and routes of folk activities, as shown in Fig 2.</span></p>
 <figure>
-<img src="" alt="Fig. 2">
-<figcaption>Fig. 2: Types of spatial information on local societies and folk beliefs.</figcaption>
+<img src="fig2.png" alt="Fig. 2" width="100%">
+<figcaption i18n:translate="">Fig. 2: Types of spatial information on local societies and folk beliefs.</figcaption>
 </figure>
 <strong i18n:translate="">Benefits of the System</strong>
 <p i18n:translate="">Three main benefits:</p>
 <ol>
-<li>Distribution of cultural resources<br />
-Enables query of various types of cultural resources within a specific range: e.g. distribution of historic sites, historic buildings, temples, and old trees in Taichung City.</li>
-<li>Integration of field studies<br />
-Target object, buildings (point); routes, satellite images, maps (images), etc., can be exported and viewed through Google Earth.</li>
-<li>Integration of different types of resources<br />
-Historic materials, digital archives, and folk legends are all integrated into a single platform.</li>
+<li><span i18n:translate="">Distribution of cultural resources</span><br />
+<span i18n:translate="">Enables query of various types of cultural resources within a specific range: e.g. distribution of historic sites, historic buildings, temples, and old trees in Taichung City.</span></li>
+<li><span i18n:translate="">Integration of field studies</span><br />
+<span i18n:translate="">Target object, buildings (point); routes, satellite images, maps (images), etc., can be exported and viewed through Google Earth.</span></li>
+<li><span i18n:translate="">Integration of different types of resources</span><br />
+<span i18n:translate="">Historic materials, digital archives, and folk legends are all integrated into a single platform.</span></li>
 </ol>
 <strong i18n:translate="">Prospect</strong>
 <p><span i18n:translate="">CRGIS is the most complete non-official platform providing information on cultural resources nationwide, integrating cultural resources in the general sense.</span>
