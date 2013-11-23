@@ -1,0 +1,441 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="crgis.theme">
+<body>
+
+<metal:content-core fill-slot="main">
+  <metal:content-core define-macro="content-core">
+
+<metal:title define-slot="content-title">
+<h1 class="documentFirstHeading" i18n:translate="">
+About Us
+</h1>
+</metal:title>
+
+<metal:description define-slot="content-description">
+<div class="documentDescription" i18n:translate="">
+CRGIS (Culture Resources Geographic Information System, CRGIS) is maintained by the GIS Center at Academia Sinica.
+</div>
+</metal:description>
+
+<dl class="enableFormTabbing">
+
+<dt id="fieldsetlegend-unique-id1"
+    i18n:translate="">About the Project</dt>
+<dt id="fieldsetlegend-unique-id2"
+    i18n:translate="">Contributors</dt>
+<dt id="fieldsetlegend-unique-id3"
+    i18n:translate="">Field Work</dt>
+<dt id="fieldsetlegend-unique-id4"
+    i18n:translate="">Team</dt>
+
+<dd id="fieldset-unique-id1">
+<p><span i18n:translate="">Taking the concept of ‘space’ as its central axis, and combining it with GIS technology, CRGIS (Cultural Resources Geographic Information System) is a system platform that integrates various types of both tangible and intangible cultural resources and attribute data.</span>
+<span i18n:translate="">It also contains various types of images, including historical images (old maps) and contemporary images (Google satellite, topographic maps, etc...).</span></p>
+<p><span i18n:translate="">CRGIS extensively collects basic geographic information including temples, old monuments, historic buildings, old trees and Fengshi Yeh (Wind Lion God) and incorporates the concept of Web2.0, encouraging the public to become involved so as to provide a more wholesome information platform.</span>
+<span i18n:translate="">Any sector, or person, who are involved are able to add new information, edit, manage, and make query on various tangible and intangible cultural resources which are exhibited in the form of images.</span></p>
+<figure>
+<img src="" alt="Fig. 1">
+<figcaption i18n:translate="">Fig. 1: Cultural Resource Geographic Information System</figcaption>
+</figure>
+<p><span i18n:translate="">The structure of the system includes two parts: WebGIS and Content Management System.</span>
+<span i18n:translate="">Firstly, WebGis takes Google Map API as the platform for the images and combines it with PosgreSQL (spatial database) for management of the geographic information of the cultural resources and provide functions such as GIS query, overlaying of images, and other vextor and image layering.</span>
+<span i18n:translate="">Plone is adopted for content management of attribute data, which includes texts, photos, multi-media files, and provides a query function.</span>
+<span i18n:translate="">Both Plone and PostgreSQL are open source programs.</span></p>
+<p><span i18n:translate="">Besides information obtained by official government units, we also needed the contribution of local groups and persons to supply information and assist the management of the system.</span>
+<span i18n:translate="">Since each type of cultural resources require knowledge in their specific realm, we also continuously invite specialists from all realms to supervise the validity of the information obtained before exhibiting them on the system.</span></p>
+<p><span i18n:translate="">As of now (Nov. 2013), on top of the images we’ve collected, the accumulated cultural resources, nationwide, include 13,868 temples, 783 old monuments, 1,092 historical buildings, 4,278 old trees, etc.</span>
+<span i18n:translate="">Cultural resources of locality features include 122 Fengshi Yeh.</span></p>
+<p><span i18n:translate="">Information on temples mainly comes from the inventory of temples provided by the Ministry of the Interior, which is then updated by cultural historic workers (or teams) through their field research.</span>
+<span i18n:translate="">The website of the Ministry of Culture provides information on the monuments and historic buildings, and information on the Old Trees were obtained from the Taiwan Endemic Species Research Institute of the Ministry of Agriculture.</span></p>
+<p><span i18n:translate="">Temples, as a sector of our cultural resource, are the central hub of the people’s belief.</span>
+<span i18n:translate="">Worshiping events and celebrations developed following the lifestyles of the locals and communities.</span>
+<span i18n:translate="">Consequently, they develop into various forms of both tangible and intangible cultural resources, and a database for the spatial information of temples, is then necessary for recording and managing these resources.</span>
+<span i18n:translate="">The GIS Center at Academia Sinica executed the project 'Digital Archive of Spatial Information on Temples and Cultural Resources Geographic Information System', in which the temples in central and southern Taiwan and surrounding islands are located using GPS.</span>
+<span i18n:translate="">Then, along with other attribute data, including year of construction, main deity of worship, photos, etc. are used as the main focus of field studies.</span>
+<span i18n:translate="">Other attribute date obtained from local gazettes and censuses finally amounting to a total of 7,400 temples.</span></p>
+<p><span i18n:translate="">CRGIS mainly records two types of data – the locations of temples on GPS and routes of folk activities, as shown in Fig 2.</span></p>
+<figure>
+<img src="" alt="Fig. 2">
+<figcaption>Fig. 2: Types of spatial information on local societies and folk beliefs.</figcaption>
+</figure>
+<strong i18n:translate="">Benefits of the System</strong>
+<p i18n:translate="">Three main benefits:</p>
+<ol>
+<li>Distribution of cultural resources<br />
+Enables query of various types of cultural resources within a specific range: e.g. distribution of historic sites, historic buildings, temples, and old trees in Taichung City.</li>
+<li>Integration of field studies<br />
+Target object, buildings (point); routes, satellite images, maps (images), etc., can be exported and viewed through Google Earth.</li>
+<li>Integration of different types of resources<br />
+Historic materials, digital archives, and folk legends are all integrated into a single platform.</li>
+</ol>
+<strong i18n:translate="">Prospect</strong>
+<p><span i18n:translate="">CRGIS is the most complete non-official platform providing information on cultural resources nationwide, integrating cultural resources in the general sense.</span>
+<span i18n:translate="">Actively promoting spatial techniques and cultural resource management, research, and application, we hope obtain a more wholesome grasp of all the cultural resources, thus extending its studies throughout the humanities.</span>
+<span i18n:translate="">We also insist on the concept of sharing, thus inviting all people to participate. Various units, teams, and knowledge providers will jointly manage and check the validity of the data, thus creating a sustainable information platform.</span></p>
+</dd>
+<dd id="fieldset-unique-id2">
+<h2>顧問群（排序依姓名筆畫）</h2>
+<table class="grid listing">
+<thead> 
+<tr>
+<th width="45px" style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th> <th style="cursor: pointer;">職稱<span class="sortdirection"> </span></th> <th style="cursor: pointer;">研究專長簡介<span class="sortdirection"> </span></th>
+</tr>
+</thead> 
+<tbody>
+<tr class="odd">
+<td><a class="external-link" href="http://idv.sinica.edu.tw/jcting/">丁仁傑</a></td>
+<td>
+<div class="visualClear">中央研究院民族所</div>
+</td>
+<td>副研究員</td>
+<td>宗教社會學、社會心理學、質化研究、社會運動、組織社會學 <br></td>
+</tr>
+<tr class="even">
+<td>丁志堅</td>
+<td>國立新竹教育大學環境與文化資源學系</td>
+<td>助理教授</td>
+<td>地圖與地理資訊系統、計量與空間分析、土地利用變遷</td>
+</tr>
+<tr class="odd">
+<td><a class="external-link" href="http://www.litphil.sinica.edu.tw/home/staff/res03.htm">李豐楙</a></td>
+<td>
+<div class="visualClear">中央研究院文哲所</div>
+</td>
+<td>研究員</td>
+<td>道教文學、道教文化、中國古典文學、中國現代文學<br></td>
+</tr>
+<tr class="even">
+<td><a class="external-link" href="http://www.religion.tcu.edu.tw/teacher_3.htm">林美容</a></td>
+<td>
+<div class="visualClear">慈濟大學宗教與文化研究所、中央研究院民族學研究所</div>
+</td>
+<td>教授、兼任研究員</td>
+<td>文化人類學、中國親屬研究、台灣民間信仰、 民間佛教、民俗宗教與醫療<br></td>
+</tr>
+<tr class="odd">
+<td>邱彥貴</td>
+<td>
+<div class="visualClear">社團法人台灣淡南民俗文化研究會台灣民俗學者</div>
+<br></td>
+<td>
+<p>常務理事</p>
+<p>&nbsp;</p>
+</td>
+<td>地方社會研究、客家研究（尤其對三山國王、義民爺等信仰與客家社群有深入研究）<br></td>
+</tr>
+<tr class="even">
+<td><a class="external-link" href="http://www.ioe.sinica.edu.tw/chinese/staff/Chang-Hsun.html">張珣</a></td>
+<td>
+<div class="visualClear">中央研究院民族所</div>
+</td>
+<td>研究員兼副所長</td>
+<td>文化人類學、醫療人類學、宗教人類學<br></td>
+</tr>
+<tr class="odd">
+<td><a class="external-link" href="http://www.ith.sinica.edu.tw/members_02_look.php?no=86&amp;page=1">謝國興</a><br></td>
+<td>
+<div class="visualClear">中央研究院台灣史研究所所</div>
+</td>
+<td>研究員兼所長</td>
+<td>中國近代史、台灣社會經濟史、民間信仰與地方社會<br></td>
+</tr>
+</tbody>
+</table>
+<h2>長期合作團體</h2>
+<table class="grid listing">
+<thead> 
+<tr>
+<th style="cursor: pointer;">縣市<span class="sortdirection"> </span></th> <th style="cursor: pointer;">鄉鎮<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th>
+</tr>
+</thead> 
+<tbody>
+<tr class="odd">
+<td>台中縣</td>
+<td><br></td>
+<td>
+<p align="center"><a class="external-link" href="http://tw.myblog.yahoo.com/folkllore-tw/">社團法人台灣淡南民俗文化研究會</a></p>
+</td>
+</tr>
+<tr class="even">
+<td>台中縣<br></td>
+<td><br></td>
+<td>
+<p align="center"><a class="external-link" href="http://blog.yam.com/taokas/">大甲媽祖教師研習團</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>長期合作人員</h2>
+<table class="grid listing">
+<thead> 
+<tr>
+<th style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th> <th style="cursor: pointer;">簡介<span class="sortdirection"> </span></th>
+</tr>
+</thead> 
+<tbody>
+<tr class="odd">
+<td>邱彥貴</td>
+<td>
+<p align="center"><a class="external-link" href="http://tw.myblog.yahoo.com/folkllore-tw/">社團法人台灣淡南民俗文化研究會</a></p>
+</td>
+<td>知名台灣民俗學者/台灣淡南民俗文化研究會常務理事</td>
+</tr>
+<tr class="even">
+<td>李宗信</td>
+<td>
+<p>臺灣師範大學歷史系博士</p>
+<p>彰化師範大學歷史系教授</p>
+</td>
+<td>
+<p>台中縣志宗教禮俗篇作者<br>東吳大學歷史學系兼任助理教授</p>
+</td>
+</tr>
+<tr class="odd">
+<td>吳明勳</td>
+<td>
+<p align="center"><a class="external-link" href="http://www.taconet.com.tw/guhome">觀佑文化影音多媒體工作室</a></p>
+</td>
+<td>安平文史工作者<br></td>
+</tr>
+<tr class="even">
+<td>黃名宏</td>
+<td>
+<p align="center">佳里國小教師</p>
+</td>
+<td>
+<p>佳里國小教師<br>台灣宋江陣研究者<br>臺南大學台灣文化研究所碩士</p>
+</td>
+</tr>
+<tr class="odd">
+<td>陳文安</td>
+<td>
+<p align="center">&nbsp;</p>
+</td>
+<td>枋寮文史工作者/獸醫師</td>
+</tr>
+<tr class="even">
+<td>林建育</td>
+<td>金門大學閩南文化研究所</td>
+<td>樹德科技大學建築研究所碩士 <br>金門大學閩南文化研究所</td>
+</tr>
+</tbody>
+</table>
+<h2>網站設計：</h2>
+<ul>
+<li>圖片提供_雷養德（大甲鎮立托兒所所長、大甲媽祖教師研習團總幹事）</li>
+<li>圖片提供_洪瑩發</li>
+<li>系統設計_胡崇偉</li>
+<li>美工_吳敏絹 (元品設計)</li>
+</ul>
+</dd>
+
+<dd id="fieldset-unique-id3" class="formPanel" style="display: none;">
+<h2>田野調查志工</h2>
+<table class="grid listing">
+<thead> 
+<tr>
+<th style="cursor: pointer;">縣市<span class="sortdirection"> </span></th> <th style="cursor: pointer;">調查鄉鎮<span class="sortdirection"> </span></th> <th style="cursor: pointer;">團隊<span class="sortdirection"> </span></th> <th style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">調查內容<span class="sortdirection"> </span></th> <th style="cursor: pointer;">調查時程<span class="sortdirection"> </span></th>
+</tr>
+</thead> 
+<tbody>
+<tr class="odd">
+<td>台中縣</td>
+<td>全縣</td>
+<td><br></td>
+<td>李宗信</td>
+<td>寺廟</td>
+<td>96年5月～<br>98年5月</td>
+</tr>
+<tr class="even">
+<td>高雄縣</td>
+<td>路竹鄉、彌陀鄉、梓官鄉、<br>橋頭鄉、阿蓮鄉、岡山鎮</td>
+<td>東光國小</td>
+<td>張耘書、張耕書</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="odd">
+<td>高雄縣</td>
+<td>大樹鄉、大社鄉、仁武鄉、<br>鳥松鄉</td>
+<td><br></td>
+<td>劉普雄</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="even">
+<td>高雄縣</td>
+<td>鳳山巿、林園鄉、大寮鄉</td>
+<td><br></td>
+<td>陳文安、劉明同、許評註</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="odd">
+<td>高雄縣</td>
+<td>燕巢鄉、田寮鄉</td>
+<td><br></td>
+<td>許評註</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="even">
+<td>高雄縣</td>
+<td>內門鄉</td>
+<td>金竹國小</td>
+<td>郭秀惠</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="odd">
+<td>高雄縣</td>
+<td>旗山鎮</td>
+<td>金竹國小</td>
+<td>林娜伶</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="even">
+<td>高雄縣</td>
+<td>美濃鎮</td>
+<td>金竹國小</td>
+<td>張二文</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="odd">
+<td>高雄縣</td>
+<td>杉林鄉</td>
+<td>金竹國小</td>
+<td>謝舒屏</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="even">
+<td>高雄縣</td>
+<td>六龜鄉</td>
+<td>金竹國小</td>
+<td>李國偵</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="odd">
+<td>高雄縣</td>
+<td>甲仙鄉、茂林鄉</td>
+<td>台南大學台研所</td>
+<td>洪麗雯</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="even">
+<td>高雄縣</td>
+<td>桃源鄉、那瑪夏鄉</td>
+<td>台南大學台研所</td>
+<td>周舜瑾</td>
+<td>寺廟</td>
+<td>97年</td>
+</tr>
+<tr class="odd">
+<td>連江縣</td>
+<td>全縣</td>
+<td>雲林科技大學文化資產維護系</td>
+<td>張薰云</td>
+<td>寺廟</td>
+<td>99年7月～<br>99年9月</td>
+</tr>
+<tr class="even">
+<td>台東縣</td>
+<td>綠島鄉</td>
+<td>中研院GIS中心</td>
+<td>江孟璁、陳青</td>
+<td>寺廟</td>
+<td>99年7月7日</td>
+</tr>
+</tbody>
+</table>
+</dd>
+
+<dd id="fieldset-unique-id4">
+<h2>工作人員</h2>
+<table class="grid listing">
+<thead> 
+<tr>
+<th style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th> <th style="cursor: pointer;">職稱<span class="sortdirection"> </span></th> <th style="cursor: pointer;">聯絡電話<span class="sortdirection"> </span></th> <th style="cursor: pointer;">Email<span class="sortdirection"> </span></th>
+</tr>
+</thead> 
+<tbody>
+<tr class="odd">
+<td>范毅軍</td>
+<td>
+<p align="center">中研院人社中心</p>
+<p>地理資訊科學研究專題中心</p>
+</td>
+<td>執行長</td>
+<td>02-27829555 ext184</td>
+<td><a href="mailto:mhfanbbc@ccvax.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
+</tr>
+<tr class="even">
+<td>廖泫銘</td>
+<td>
+<p align="center">中研院人社中心</p>
+<p>地理資訊科學研究專題中心</p>
+</td>
+<td>研究助技師</td>
+<td>02-27898187</td>
+<td><a href="mailto:veevee@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
+</tr>
+<tr class="odd">
+<td>張智傑</td>
+<td>
+<p align="center">中研院人社中心</p>
+<p>地理資訊科學研究專題中心</p>
+</td>
+<td>專案經理</td>
+<td>02-27821693 ext236</td>
+<td><a href="mailto:roger@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
+</tr>
+<tr class="even">
+<td>洪瑩發</td>
+<td>
+<p align="center">中研院人社中心</p>
+<p>地理資訊科學研究專題中心</p>
+</td>
+<td>計畫助理<br></td>
+<td>02-27821693 ext238</td>
+<td><a href="mailto:hodna@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
+</tr>
+<tr class="odd">
+<td>胡崇偉</td>
+<td>
+<p align="center">中研院人社中心</p>
+<p>地理資訊科學研究專題中心</p>
+</td>
+<td>專案企劃師</td>
+<td>02-27821693 ext237</td>
+<td><a href="mailto:marr@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
+</tr>
+<tr class="even">
+<td>顏守韓</td>
+<td>
+<p align="center">中研院人社中心</p>
+<p>地理資訊科學研究專題中心</p>
+</td>
+<td>專案管理師<br></td>
+<td>02-27821693 ext233</td>
+<td><a href="mailto:shy0814@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
+</tr>
+</tbody>
+</table>
+</dd>
+
+</dl>
+
+  </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

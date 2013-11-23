@@ -9,3 +9,7 @@ class IFrontPage(Interface):
     """Browser View for FrontPage Logic
     """
 
+class IAboutView(Interface):
+    """Browser View for About Logic
+    """
+

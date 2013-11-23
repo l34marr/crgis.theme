@@ -37,4 +37,12 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      for="*"
+      class=".custom.AboutView"
+      name="about"
+      template="about.pt"
+      permission="zope2.View"
+      />
+
 </configure>

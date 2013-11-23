@@ -10,6 +10,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.Five import BrowserView
 
 from crgis.theme.interfaces import IFrontPage
+from crgis.theme.interfaces import IAboutView
 
 
 class FrontPage(BrowserView):
@@ -64,4 +65,9 @@ class FrontPage(BrowserView):
         portal_state = getMultiAdapter((context, self.request),
             name=u'plone_portal_state')
         return portal_state.navigation_root_path() + '/news-events/events'
+
+
+class AboutView(BrowserView):
+
+    implements(IAboutView)
 
