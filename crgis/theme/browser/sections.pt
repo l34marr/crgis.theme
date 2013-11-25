@@ -9,21 +9,21 @@
     i18n:translate="">
     Home</a>
   </li>
-  <li id="portaltab-cultural-properties" class="plain">
+  <li id="portaltab-assets" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/cultural-properties"
+    tal:attributes="href string:${root_url}/assets"
     i18n:translate="">
     Assets</a>
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/cultural-properties/tangible"
+        tal:attributes="href string:${root_url}/assets/tangible"
         i18n:translate="">
         Tangible</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/cultural-properties/intangible"
+        tal:attributes="href string:${root_url}/assetes/intangible"
         i18n:translate="">
         Intangible</a>
       </li>
@@ -189,33 +189,33 @@
       </li>
     </ul>
   </li>
-  <li id="portaltab-news-events" class="plain">
+  <li id="portaltab-info" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/news-events"
+    tal:attributes="href string:${root_url}/info"
     i18n:translate="">
     Info</a>
     <ul class="submenu">
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/knowledge"
+        tal:attributes="href string:${root_url}/info/knowledge"
         i18n:translate="">
         New Knowledge</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/news"
+        tal:attributes="href string:${root_url}/info/news"
         i18n:translate="">
         News</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/events"
+        tal:attributes="href string:${root_url}/info/events"
         i18n:translate="">
         Events</a>
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/news-events/festival"
+        tal:attributes="href string:${root_url}/info/festival"
         i18n:translate="">
         Festival</a>
       </li>
@@ -285,9 +285,9 @@
       </li>
     </ul>
   </li>
-  <li id="portaltab-about-us" class="plain">
+  <li id="portaltab-about" class="plain">
    <a href="#"
-    tal:attributes="href string:${root_url}/about-us"
+    tal:attributes="href string:${root_url}/about"
     i18n:translate="">
     About</a>
   </li>
