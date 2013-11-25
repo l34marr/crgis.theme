@@ -33,7 +33,7 @@ class FrontPage(BrowserView):
         catalog = getToolByName(context, 'portal_catalog')
         portal_state = getMultiAdapter((context, self.request),
             name=u'plone_portal_state')
-        path = portal_state.navigation_root_path() + '/news-events/news'
+        path = portal_state.navigation_root_path() + '/info/news'
         return catalog(portal_type='News Item',
                        review_state='published',
                        path=path,
@@ -46,7 +46,7 @@ class FrontPage(BrowserView):
         catalog = getToolByName(context, 'portal_catalog')
         portal_state = getMultiAdapter((context, self.request),
             name=u'plone_portal_state')
-        path = portal_state.navigation_root_path() + '/news-events/events'
+        path = portal_state.navigation_root_path() + '/info/events'
         return catalog(portal_type='Event',
                        review_state=('external', 'internal', 'internally_published', 'published'),
                        path=path,
@@ -58,13 +58,13 @@ class FrontPage(BrowserView):
         context = aq_inner(self.context)
         portal_state = getMultiAdapter((context, self.request),
             name=u'plone_portal_state')
-        return portal_state.navigation_root_path() + '/news-events/news'
+        return portal_state.navigation_root_path() + '/info/news'
 
     def allEventURL(self):
         context = aq_inner(self.context)
         portal_state = getMultiAdapter((context, self.request),
             name=u'plone_portal_state')
-        return portal_state.navigation_root_path() + '/news-events/events'
+        return portal_state.navigation_root_path() + '/info/events'
 
 
 class AboutView(BrowserView):

@@ -23,7 +23,7 @@
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/assetes/intangible"
+        tal:attributes="href string:${root_url}/assets/intangible"
         i18n:translate="">
         Intangible</a>
       </li>
