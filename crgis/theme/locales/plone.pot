@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2013-11-24 04:00+0000\n"
-"PO-Revision-Date: 2013-11-24 12:02+0800\n"
+"POT-Creation-Date: 2013-12-09 04:00+0000\n"
+"PO-Revision-Date: 2013-12-09 12:02+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -23,3 +23,22 @@ msgstr ""
 msgid "portal_title"
 msgstr ""
 
+#. EEA
+msgid "Main Deity (Tag Cloud)"
+msgstr ""
+
+#. EEA
+msgid "Main Deity (Title to Query)"
+msgstr ""
+
+#. EEA
+msgid "Temple Title"
+msgstr ""
+
+#. EEA
+msgid "Administrative Area"
+msgstr ""
+
+#. EEA
+msgid "Type to Query"
+msgstr ""

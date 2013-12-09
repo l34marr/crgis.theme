@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2013-11-24 04:00+0000\n"
-"PO-Revision-Date: 2013-11-24 12:02+0800\n"
+"POT-Creation-Date: 2013-12-09 04:00+0000\n"
+"PO-Revision-Date: 2013-12-09 12:02+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -23,3 +23,22 @@ msgstr "訂閱 RSS"
 msgid "portal_title"
 msgstr "文化資源地理資訊系統"
 
+#. EEA
+msgid "Main Deity (Tag Cloud)"
+msgstr "主祀神明 (標籤雲)"
+
+#. EEA
+msgid "Main Deity (Title to Query)"
+msgstr "主祀神明 (自填)"
+
+#. EEA
+msgid "Temple Title"
+msgstr "寺廟名"
+
+#. EEA
+msgid "Administrative Area"
+msgstr "行政區"
+
+#. EEA
+msgid "Type to Query"
+msgstr "查詢項目"
