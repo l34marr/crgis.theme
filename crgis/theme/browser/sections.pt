@@ -290,6 +290,14 @@
     tal:attributes="href string:${root_url}/about"
     i18n:translate="">
     About</a>
+    <ul class="submenu">
+      <li>
+       <a href="#"
+        tal:attributes="href string:${root_url}/about/guide"
+        i18n:translate="">
+        Guide</a>
+      </li>
+    </ul>
   </li>
 </ul>
 </tal:sections>
