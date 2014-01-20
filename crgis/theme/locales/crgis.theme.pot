@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-12-10 01:41+0000\n"
+"POT-Creation-Date: 2013-12-10 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,20 +17,19 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.theme\n"
 
-#: ./browser/about.pt:14
 #: ./browser/sections.pt:289
 msgid "About"
 msgstr ""
 
-#: ./browser/about.pt:27
+#: ./browser/about.pt:34
 msgid "About the Project"
 msgstr ""
 
-#: ./browser/about.pt:80
+#: ./browser/about.pt:87
 msgid "Actively promoting spatial techniques and cultural resource management, research, and application, we hope obtain a more wholesome grasp of all the cultural resources, thus extending its studies throughout the humanities."
 msgstr ""
 
-#: ./browser/about.pt:42
+#: ./browser/about.pt:49
 msgid "Any sector, or person, who are involved are able to add new information, edit, manage, and make query on various tangible and intangible cultural resources which are exhibited in the form of images."
 msgstr ""
 
@@ -38,7 +37,7 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: ./browser/about.pt:53
+#: ./browser/about.pt:60
 msgid "As of now (Nov. 2013), on top of the images we’ve collected, the accumulated cultural resources, nationwide, include 13,868 temples, 783 old monuments, 1,092 historical buildings, 4,278 old trees, etc."
 msgstr ""
 
@@ -50,31 +49,31 @@ msgstr ""
 msgid "Atlas"
 msgstr ""
 
-#: ./browser/about.pt:68
+#: ./browser/about.pt:75
 msgid "Benefits of the System"
 msgstr ""
 
-#: ./browser/about.pt:51
+#: ./browser/about.pt:58
 msgid "Besides information obtained by official government units, we also needed the contribution of local groups and persons to supply information and assist the management of the system."
 msgstr ""
 
-#: ./browser/about.pt:50
+#: ./browser/about.pt:57
 msgid "Both Plone and PostgreSQL are open source programs."
 msgstr ""
 
-#: ./browser/about.pt:20
+#: ./browser/about.pt:25
 msgid "CRGIS (Culture Resources Geographic Information System) is maintained by the GIS Center at Academia Sinica."
 msgstr ""
 
-#: ./browser/about.pt:41
+#: ./browser/about.pt:48
 msgid "CRGIS extensively collects basic geographic information including temples, old monuments, historic buildings, old trees and Fengshi Yeh (Wind Lion God) and incorporates the concept of Web2.0, encouraging the public to become involved so as to provide a more wholesome information platform."
 msgstr ""
 
-#: ./browser/about.pt:79
+#: ./browser/about.pt:86
 msgid "CRGIS is the most complete non-official platform providing information on cultural resources nationwide, integrating cultural resources in the general sense."
 msgstr ""
 
-#: ./browser/about.pt:63
+#: ./browser/about.pt:70
 msgid "CRGIS mainly records two types of data – the locations of temples on GPS and routes of folk activities, as shown in Fig 2."
 msgstr ""
 
@@ -94,19 +93,19 @@ msgstr ""
 msgid "Chiayi County"
 msgstr ""
 
-#: ./browser/about.pt:59
+#: ./browser/about.pt:66
 msgid "Consequently, they develop into various forms of both tangible and intangible cultural resources, and a database for the spatial information of temples, is then necessary for recording and managing these resources."
 msgstr ""
 
-#: ./browser/about.pt:29
+#: ./browser/about.pt:36
 msgid "Contributors"
 msgstr ""
 
-#: ./browser/about.pt:54
+#: ./browser/about.pt:61
 msgid "Cultural resources of locality features include 122 Fengshi Yeh."
 msgstr ""
 
-#: ./browser/about.pt:71
+#: ./browser/about.pt:78
 msgid "Distribution of cultural resources"
 msgstr ""
 
@@ -114,7 +113,7 @@ msgstr ""
 msgid "Downloads"
 msgstr ""
 
-#: ./browser/about.pt:72
+#: ./browser/about.pt:79
 msgid "Enables query of various types of cultural resources within a specific range: e.g. distribution of historic sites, historic buildings, temples, and old trees in Taichung City."
 msgstr ""
 
@@ -126,19 +125,19 @@ msgstr ""
 msgid "Festival"
 msgstr ""
 
-#: ./browser/about.pt:31
+#: ./browser/about.pt:39
 msgid "Field Studies"
 msgstr ""
 
-#: ./browser/about.pt:45
+#: ./browser/about.pt:52
 msgid "Fig. 1: Cultural Resource Geographic Information System"
 msgstr ""
 
-#: ./browser/about.pt:66
+#: ./browser/about.pt:73
 msgid "Fig. 2: Types of spatial information on local societies and folk beliefs."
 msgstr ""
 
-#: ./browser/about.pt:48
+#: ./browser/about.pt:55
 msgid "Firstly, WebGis takes Google Map API as the platform for the images and combines it with PosgreSQL (spatial database) for management of the geographic information of the cultural resources and provide functions such as GIS query, overlaying of images, and other vextor and image layering."
 msgstr ""
 
@@ -154,7 +153,7 @@ msgstr ""
 msgid "Guide"
 msgstr ""
 
-#: ./browser/about.pt:76
+#: ./browser/about.pt:83
 msgid "Historic materials, digital archives, and folk legends are all integrated into a single platform."
 msgstr ""
 
@@ -178,7 +177,7 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: ./browser/about.pt:55
+#: ./browser/about.pt:62
 msgid "Information on temples mainly comes from the inventory of temples provided by the Ministry of the Interior, which is then updated by cultural historic workers (or teams) through their field research."
 msgstr ""
 
@@ -186,15 +185,15 @@ msgstr ""
 msgid "Intangible"
 msgstr ""
 
-#: ./browser/about.pt:75
+#: ./browser/about.pt:82
 msgid "Integration of different types of resources"
 msgstr ""
 
-#: ./browser/about.pt:73
+#: ./browser/about.pt:80
 msgid "Integration of field studies"
 msgstr ""
 
-#: ./browser/about.pt:40
+#: ./browser/about.pt:47
 msgid "It also contains various types of images, including historical images (old maps) and contemporary images (Google satellite, topographic maps, etc...)."
 msgstr ""
 
@@ -238,7 +237,7 @@ msgstr ""
 msgid "Online"
 msgstr ""
 
-#: ./browser/about.pt:62
+#: ./browser/about.pt:69
 msgid "Other attribute date obtained from local gazettes and censuses finally amounting to a total of 7,400 temples."
 msgstr ""
 
@@ -254,11 +253,11 @@ msgstr ""
 msgid "Pingtung County"
 msgstr ""
 
-#: ./browser/about.pt:49
+#: ./browser/about.pt:56
 msgid "Plone is adopted for content management of attribute data, which includes texts, photos, multi-media files, and provides a query function."
 msgstr ""
 
-#: ./browser/about.pt:78
+#: ./browser/about.pt:85
 msgid "Prospect"
 msgstr ""
 
@@ -274,7 +273,7 @@ msgstr ""
 msgid "Resources"
 msgstr ""
 
-#: ./browser/about.pt:52
+#: ./browser/about.pt:59
 msgid "Since each type of cultural resources require knowledge in their specific realm, we also continuously invite specialists from all realms to supervise the validity of the information obtained before exhibiting them on the system."
 msgstr ""
 
@@ -298,7 +297,7 @@ msgstr ""
 msgid "Taitung County"
 msgstr ""
 
-#: ./browser/about.pt:39
+#: ./browser/about.pt:46
 msgid "Taking the concept of ‘space’ as its central axis, and combining it with GIS technology, CRGIS (Cultural Resources Geographic Information System) is a system platform that integrates various types of both tangible and intangible cultural resources and attribute data."
 msgstr ""
 
@@ -310,43 +309,47 @@ msgstr ""
 msgid "Taoyuan County"
 msgstr ""
 
-#: ./browser/about.pt:74
+#: ./browser/about.pt:81
 msgid "Target object, buildings (point); routes, satellite images, maps (images), etc., can be exported and viewed through Google Earth."
 msgstr ""
 
-#: ./browser/about.pt:34
+#: ./browser/about.pt:42
 msgid "Team"
+msgstr ""
+
+#: ./browser/about.pt:398
+msgid "Temple Querying"
 msgstr ""
 
 #: ./browser/sections.pt:33
 msgid "Temples"
 msgstr ""
 
-#: ./browser/about.pt:57
+#: ./browser/about.pt:64
 msgid "Temples, as a sector of our cultural resource, are the central hub of the people’s belief."
 msgstr ""
 
-#: ./browser/about.pt:60
+#: ./browser/about.pt:67
 msgid "The GIS Center at Academia Sinica executed the project 'Digital Archive of Spatial Information on Temples and Cultural Resources Geographic Information System', in which the temples in central and southern Taiwan and surrounding islands are located using GPS."
 msgstr ""
 
-#: ./browser/about.pt:47
+#: ./browser/about.pt:54
 msgid "The structure of the system includes two parts: WebGIS and Content Management System."
 msgstr ""
 
-#: ./browser/about.pt:56
+#: ./browser/about.pt:63
 msgid "The website of the Ministry of Culture provides information on the monuments and historic buildings, and information on the Old Trees were obtained from the Taiwan Endemic Species Research Institute of the Ministry of Agriculture."
 msgstr ""
 
-#: ./browser/about.pt:61
+#: ./browser/about.pt:68
 msgid "Then, along with other attribute data, including year of construction, main deity of worship, photos, etc. are used as the main focus of field studies."
 msgstr ""
 
-#: ./browser/about.pt:69
+#: ./browser/about.pt:76
 msgid "Three main benefits:"
 msgstr ""
 
-#: ./browser/about.pt:81
+#: ./browser/about.pt:88
 msgid "We also insist on the concept of sharing, thus inviting all people to participate. Various units, teams, and knowledge providers will jointly manage and check the validity of the data, thus creating a sustainable information platform."
 msgstr ""
 
@@ -354,7 +357,7 @@ msgstr ""
 msgid "Web GIS"
 msgstr ""
 
-#: ./browser/about.pt:58
+#: ./browser/about.pt:65
 msgid "Worshiping events and celebrations developed following the lifestyles of the locals and communities."
 msgstr ""
 
@@ -384,6 +387,16 @@ msgstr ""
 #. Default: "Copyright"
 #: ./browser/footer.pt:8
 msgid "copyright_title"
+msgstr ""
+
+#. Default: "About"
+#: ./browser/about.pt:15
+msgid "h1_about"
+msgstr ""
+
+#. Default: "Guide"
+#: ./browser/about.pt:19
+msgid "h1_guide"
 msgstr ""
 
 #. Default: "Navigation"

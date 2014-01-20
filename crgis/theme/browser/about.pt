@@ -8,31 +8,40 @@
 <body>
 
 <metal:content-core fill-slot="main">
-  <metal:content-core define-macro="content-core">
+  <metal:content-core define-macro="content-core"
+   tal:define="here_url context/@@plone_context_state/object_url">
 
 <metal:title define-slot="content-title">
-<h1 class="documentFirstHeading" i18n:translate="">
+<h1 class="documentFirstHeading" i18n:translate="h1_about"
+ tal:condition="python: here_url.split('/')[-2:] == ['about','index.html']">
 About
 </h1>
+<h1 class="documentFirstHeading" i18n:translate="h1_guide"
+ tal:condition="python: here_url.split('/')[-2:] == ['about','guide']">
+Guide
+</h1>
 </metal:title>
-
 <metal:description define-slot="content-description">
-<div class="documentDescription" i18n:translate="">
+<div class="documentDescription" i18n:translate=""
+ tal:condition="python: here_url.split('/')[-2:] == ['about','index.html']">
 CRGIS (Culture Resources Geographic Information System) is maintained by the GIS Center at Academia Sinica.
 </div>
 </metal:description>
 
-<dl class="enableFormTabbing">
-
+<dl class="enableFormTabbing"
+ tal:define="plang python:context.restrictedTraverse('@@plone_portal_state').language()"
+ tal:condition="python: here_url.split('/')[-2:] == ['about','index.html']">
 <dt id="fieldsetlegend-unique-id1"
-    i18n:translate="">About the Project</dt>
+ i18n:translate="">About the Project</dt>
 <dt id="fieldsetlegend-unique-id2"
-    i18n:translate="">Contributors</dt>
+ tal:condition="python: plang == 'zh-tw'"
+ i18n:translate="">Contributors</dt>
 <dt id="fieldsetlegend-unique-id3"
-    i18n:translate="">Field Studies</dt>
+ tal:condition="python: plang == 'zh-tw'"
+ i18n:translate="">Field Studies</dt>
 <dt id="fieldsetlegend-unique-id4"
-    i18n:translate="">Team</dt>
-
+ tal:condition="python: plang == 'zh-tw'"
+ i18n:translate="">Team</dt>
 <dd id="fieldset-unique-id1">
 <p><span i18n:translate="">Taking the concept of ‘space’ as its central axis, and combining it with GIS technology, CRGIS (Cultural Resources Geographic Information System) is a system platform that integrates various types of both tangible and intangible cultural resources and attribute data.</span>
 <span i18n:translate="">It also contains various types of images, including historical images (old maps) and contemporary images (Google satellite, topographic maps, etc...).</span></p>
@@ -78,22 +87,21 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 <span i18n:translate="">Actively promoting spatial techniques and cultural resource management, research, and application, we hope obtain a more wholesome grasp of all the cultural resources, thus extending its studies throughout the humanities.</span>
 <span i18n:translate="">We also insist on the concept of sharing, thus inviting all people to participate. Various units, teams, and knowledge providers will jointly manage and check the validity of the data, thus creating a sustainable information platform.</span></p>
 </dd>
-<dd id="fieldset-unique-id2">
+<dd id="fieldset-unique-id2"
+ tal:condition="python: plang == 'zh-tw'">
 <h2>顧問群（排序依姓名筆畫）</h2>
 <table class="grid listing">
 <thead> 
 <tr>
-<th width="45px" style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th> <th style="cursor: pointer;">職稱<span class="sortdirection"> </span></th> <th style="cursor: pointer;">研究專長簡介<span class="sortdirection"> </span></th>
+<th width="10%">姓名</th><th>單位</th><th>職稱</th><th>研究專長簡介</th>
 </tr>
-</thead> 
+</thead>
 <tbody>
 <tr class="odd">
 <td><a class="external-link" href="http://idv.sinica.edu.tw/jcting/">丁仁傑</a></td>
-<td>
-<div class="visualClear">中央研究院民族所</div>
-</td>
+<td>中央研究院民族所</td>
 <td>副研究員</td>
-<td>宗教社會學、社會心理學、質化研究、社會運動、組織社會學 <br></td>
+<td>宗教社會學、社會心理學、質化研究、社會運動、組織社會學</td>
 </tr>
 <tr class="even">
 <td>丁志堅</td>
@@ -103,46 +111,33 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 </tr>
 <tr class="odd">
 <td><a class="external-link" href="http://www.litphil.sinica.edu.tw/home/staff/res03.htm">李豐楙</a></td>
-<td>
-<div class="visualClear">中央研究院文哲所</div>
-</td>
+<td>中央研究院文哲所</td>
 <td>研究員</td>
-<td>道教文學、道教文化、中國古典文學、中國現代文學<br></td>
+<td>道教文學、道教文化、中國古典文學、中國現代文學</td>
 </tr>
 <tr class="even">
 <td><a class="external-link" href="http://www.religion.tcu.edu.tw/teacher_3.htm">林美容</a></td>
-<td>
-<div class="visualClear">慈濟大學宗教與文化研究所、中央研究院民族學研究所</div>
-</td>
+<td>慈濟大學宗教與文化研究所、中央研究院民族學研究所</td>
 <td>教授、兼任研究員</td>
-<td>文化人類學、中國親屬研究、台灣民間信仰、 民間佛教、民俗宗教與醫療<br></td>
+<td>文化人類學、中國親屬研究、台灣民間信仰、民間佛教、民俗宗教與醫療</td>
 </tr>
 <tr class="odd">
 <td>邱彥貴</td>
-<td>
-<div class="visualClear">社團法人台灣淡南民俗文化研究會台灣民俗學者</div>
-<br></td>
-<td>
-<p>常務理事</p>
-<p>&nbsp;</p>
-</td>
-<td>地方社會研究、客家研究（尤其對三山國王、義民爺等信仰與客家社群有深入研究）<br></td>
+<td>社團法人台灣淡南民俗文化研究會台灣民俗學者</td>
+<td>常務理事</td>
+<td>地方社會研究、客家研究（尤其對三山國王、義民爺等信仰與客家社群有深入研究）</td>
 </tr>
 <tr class="even">
 <td><a class="external-link" href="http://www.ioe.sinica.edu.tw/chinese/staff/Chang-Hsun.html">張珣</a></td>
-<td>
-<div class="visualClear">中央研究院民族所</div>
-</td>
+<td>中央研究院民族所</td>
 <td>研究員兼副所長</td>
-<td>文化人類學、醫療人類學、宗教人類學<br></td>
+<td>文化人類學、醫療人類學、宗教人類學</td>
 </tr>
 <tr class="odd">
-<td><a class="external-link" href="http://www.ith.sinica.edu.tw/members_02_look.php?no=86&amp;page=1">謝國興</a><br></td>
-<td>
-<div class="visualClear">中央研究院台灣史研究所所</div>
-</td>
+<td><a class="external-link" href="http://www.ith.sinica.edu.tw/members_02_look.php?no=86&amp;page=1">謝國興</a></td>
+<td>中央研究院台灣史研究所所</td>
 <td>研究員兼所長</td>
-<td>中國近代史、台灣社會經濟史、民間信仰與地方社會<br></td>
+<td>中國近代史、台灣社會經濟史、民間信仰與地方社會</td>
 </tr>
 </tbody>
 </table>
@@ -150,23 +145,19 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 <table class="grid listing">
 <thead> 
 <tr>
-<th style="cursor: pointer;">縣市<span class="sortdirection"> </span></th> <th style="cursor: pointer;">鄉鎮<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th>
+<th width="15%">縣市</th><th width="10%">鄉鎮</th><th>單位</th>
 </tr>
 </thead> 
 <tbody>
 <tr class="odd">
 <td>台中縣</td>
-<td><br></td>
-<td>
-<p align="center"><a class="external-link" href="http://tw.myblog.yahoo.com/folkllore-tw/">社團法人台灣淡南民俗文化研究會</a></p>
-</td>
+<td></td>
+<td><a class="external-link" href="http://tw.myblog.yahoo.com/folkllore-tw/">社團法人台灣淡南民俗文化研究會</a></td>
 </tr>
 <tr class="even">
-<td>台中縣<br></td>
-<td><br></td>
-<td>
-<p align="center"><a class="external-link" href="http://blog.yam.com/taokas/">大甲媽祖教師研習團</a></p>
-</td>
+<td>台中縣</td>
+<td></td>
+<td><a class="external-link" href="http://blog.yam.com/taokas/">大甲媽祖教師研習團</a></td>
 </tr>
 </tbody>
 </table>
@@ -174,58 +165,43 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 <table class="grid listing">
 <thead> 
 <tr>
-<th style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th> <th style="cursor: pointer;">簡介<span class="sortdirection"> </span></th>
+<th>姓名</th><th>單位</th><th>簡介</th>
 </tr>
 </thead> 
 <tbody>
 <tr class="odd">
 <td>邱彥貴</td>
-<td>
-<p align="center"><a class="external-link" href="http://tw.myblog.yahoo.com/folkllore-tw/">社團法人台灣淡南民俗文化研究會</a></p>
-</td>
+<td><a class="external-link" href="http://tw.myblog.yahoo.com/folkllore-tw/">社團法人台灣淡南民俗文化研究會</a></td>
 <td>知名台灣民俗學者/台灣淡南民俗文化研究會常務理事</td>
 </tr>
 <tr class="even">
 <td>李宗信</td>
-<td>
-<p>臺灣師範大學歷史系博士</p>
-<p>彰化師範大學歷史系教授</p>
-</td>
-<td>
-<p>台中縣志宗教禮俗篇作者<br>東吳大學歷史學系兼任助理教授</p>
-</td>
+<td>臺灣師範大學歷史系博士<br />彰化師範大學歷史系教授</td>
+<td>台中縣志宗教禮俗篇作者<br />東吳大學歷史學系兼任助理教授</td>
 </tr>
 <tr class="odd">
 <td>吳明勳</td>
-<td>
-<p align="center"><a class="external-link" href="http://www.taconet.com.tw/guhome">觀佑文化影音多媒體工作室</a></p>
-</td>
-<td>安平文史工作者<br></td>
+<td><a class="external-link" href="http://www.taconet.com.tw/guhome">觀佑文化影音多媒體工作室</a></td>
+<td>安平文史工作者</td>
 </tr>
 <tr class="even">
 <td>黃名宏</td>
-<td>
-<p align="center">佳里國小教師</p>
-</td>
-<td>
-<p>佳里國小教師<br>台灣宋江陣研究者<br>臺南大學台灣文化研究所碩士</p>
-</td>
+<td>佳里國小</td>
+<td>佳里國小教師<br />台灣宋江陣研究者<br />臺南大學台灣文化研究所碩士</td>
 </tr>
 <tr class="odd">
 <td>陳文安</td>
-<td>
-<p align="center">&nbsp;</p>
-</td>
+<td></td>
 <td>枋寮文史工作者/獸醫師</td>
 </tr>
 <tr class="even">
 <td>林建育</td>
 <td>金門大學閩南文化研究所</td>
-<td>樹德科技大學建築研究所碩士 <br>金門大學閩南文化研究所</td>
+<td>樹德科技大學建築研究所碩士<br />金門大學閩南文化研究所</td>
 </tr>
 </tbody>
 </table>
-<h2>網站設計：</h2>
+<h2>網站設計</h2>
 <ul>
 <li>圖片提供_雷養德（大甲鎮立托兒所所長、大甲媽祖教師研習團總幹事）</li>
 <li>圖片提供_洪瑩發</li>
@@ -233,27 +209,27 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 <li>美工_吳敏絹 (元品設計)</li>
 </ul>
 </dd>
-
-<dd id="fieldset-unique-id3" class="formPanel" style="display: none;">
+<dd id="fieldset-unique-id3"
+ tal:condition="python: plang == 'zh-tw'">
 <h2>田野調查志工</h2>
 <table class="grid listing">
 <thead> 
 <tr>
-<th style="cursor: pointer;">縣市<span class="sortdirection"> </span></th> <th style="cursor: pointer;">調查鄉鎮<span class="sortdirection"> </span></th> <th style="cursor: pointer;">團隊<span class="sortdirection"> </span></th> <th style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">調查內容<span class="sortdirection"> </span></th> <th style="cursor: pointer;">調查時程<span class="sortdirection"> </span></th>
+<th width="9%">縣市</th><th width="26%">調查鄉鎮</th><th width="16%">團隊</th><th>姓名</th><th>調查內容</th><th>調查時程</th>
 </tr>
 </thead> 
 <tbody>
 <tr class="odd">
 <td>台中縣</td>
 <td>全縣</td>
-<td><br></td>
+<td></td>
 <td>李宗信</td>
 <td>寺廟</td>
-<td>96年5月～<br>98年5月</td>
+<td>96年5月～<br />98年5月</td>
 </tr>
 <tr class="even">
 <td>高雄縣</td>
-<td>路竹鄉、彌陀鄉、梓官鄉、<br>橋頭鄉、阿蓮鄉、岡山鎮</td>
+<td>路竹鄉、彌陀鄉、梓官鄉、橋頭鄉、阿蓮鄉、岡山鎮</td>
 <td>東光國小</td>
 <td>張耘書、張耕書</td>
 <td>寺廟</td>
@@ -261,8 +237,8 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 </tr>
 <tr class="odd">
 <td>高雄縣</td>
-<td>大樹鄉、大社鄉、仁武鄉、<br>鳥松鄉</td>
-<td><br></td>
+<td>大樹鄉、大社鄉、仁武鄉、鳥松鄉</td>
+<td></td>
 <td>劉普雄</td>
 <td>寺廟</td>
 <td>97年</td>
@@ -278,7 +254,7 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 <tr class="odd">
 <td>高雄縣</td>
 <td>燕巢鄉、田寮鄉</td>
-<td><br></td>
+<td></td>
 <td>許評註</td>
 <td>寺廟</td>
 <td>97年</td>
@@ -345,7 +321,7 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 <td>雲林科技大學文化資產維護系</td>
 <td>張薰云</td>
 <td>寺廟</td>
-<td>99年7月～<br>99年9月</td>
+<td>99年7月～<br />99年9月</td>
 </tr>
 <tr class="even">
 <td>台東縣</td>
@@ -358,81 +334,71 @@ CRGIS (Culture Resources Geographic Information System) is maintained by the GIS
 </tbody>
 </table>
 </dd>
-
-<dd id="fieldset-unique-id4">
+<dd id="fieldset-unique-id4"
+ tal:condition="python: plang == 'zh-tw'">
 <h2>工作人員</h2>
 <table class="grid listing">
 <thead> 
 <tr>
-<th style="cursor: pointer;">姓名<span class="sortdirection"> </span></th> <th style="cursor: pointer;">單位<span class="sortdirection"> </span></th> <th style="cursor: pointer;">職稱<span class="sortdirection"> </span></th> <th style="cursor: pointer;">聯絡電話<span class="sortdirection"> </span></th> <th style="cursor: pointer;">Email<span class="sortdirection"> </span></th>
+<th>姓名</th><th>單位</th><th>職稱</th><th>聯絡電話</th><th>Email</th>
 </tr>
 </thead> 
 <tbody>
 <tr class="odd">
 <td>范毅軍</td>
-<td>
-<p align="center">中研院人社中心</p>
-<p>地理資訊科學研究專題中心</p>
-</td>
+<td>中研院人社中心<br />地理資訊科學研究專題中心</td>
 <td>執行長</td>
 <td>02-27829555 ext184</td>
 <td><a href="mailto:mhfanbbc@ccvax.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
 </tr>
 <tr class="even">
 <td>廖泫銘</td>
-<td>
-<p align="center">中研院人社中心</p>
-<p>地理資訊科學研究專題中心</p>
-</td>
+<td>中研院人社中心<br />地理資訊科學研究專題中心</td>
 <td>研究助技師</td>
 <td>02-27898187</td>
 <td><a href="mailto:veevee@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
 </tr>
 <tr class="odd">
 <td>張智傑</td>
-<td>
-<p align="center">中研院人社中心</p>
-<p>地理資訊科學研究專題中心</p>
-</td>
+<td>中研院人社中心<br />地理資訊科學研究專題中心</td>
 <td>專案經理</td>
 <td>02-27821693 ext236</td>
 <td><a href="mailto:roger@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
 </tr>
 <tr class="even">
 <td>洪瑩發</td>
-<td>
-<p align="center">中研院人社中心</p>
-<p>地理資訊科學研究專題中心</p>
-</td>
-<td>計畫助理<br></td>
+<td>中研院人社中心<br />地理資訊科學研究專題中心</td>
+<td>計畫助理</td>
 <td>02-27821693 ext238</td>
 <td><a href="mailto:hodna@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
 </tr>
 <tr class="odd">
 <td>胡崇偉</td>
-<td>
-<p align="center">中研院人社中心</p>
-<p>地理資訊科學研究專題中心</p>
-</td>
+<td>中研院人社中心<br />地理資訊科學研究專題中心</td>
 <td>專案企劃師</td>
 <td>02-27821693 ext237</td>
 <td><a href="mailto:marr@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
 </tr>
 <tr class="even">
 <td>顏守韓</td>
-<td>
-<p align="center">中研院人社中心</p>
-<p>地理資訊科學研究專題中心</p>
-</td>
-<td>專案管理師<br></td>
+<td>中研院人社中心<br />地理資訊科學研究專題中心</td>
+<td>專案管理師</td>
 <td>02-27821693 ext233</td>
 <td><a href="mailto:shy0814@gate.sinica.edu.tw"><img src="http://crgis.rchss.sinica.edu.tw/mail_icon.gif" width="16" alt="文化資源地理資訊系統" title="文化資源地理資訊系統" height="16"></a></td>
 </tr>
 </tbody>
 </table>
 </dd>
-
 </dl>
+
+<div class="tileItem visualIEFloatFix"
+ tal:condition="python: here_url.split('/')[-2:] == ['about','guide']">
+<ul>
+<li><a href="search_function/view">
+<h2 class="tileHeadline" i18n:translate="">Temple Querying</h2>
+</a></li>
+</ul>
+</div>
 
   </metal:content-core>
 </metal:content-core>

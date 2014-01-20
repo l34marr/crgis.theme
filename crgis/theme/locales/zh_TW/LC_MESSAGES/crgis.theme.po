@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: crgis.theme\n"
-"POT-Creation-Date: 2013-12-10 01:41+0000\n"
-"PO-Revision-Date: 2013-12-10 09:41+0800\n"
+"POT-Creation-Date: 2013-12-10 14:32+0000\n"
+"PO-Revision-Date: 2013-12-10 22:32+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,20 +14,19 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: crgis.theme\n"
 
-#: ./browser/about.pt:14
 #: ./browser/sections.pt:289
 msgid "About"
 msgstr "關於本系統"
 
-#: ./browser/about.pt:27
+#: ./browser/about.pt:34
 msgid "About the Project"
 msgstr "計畫簡介"
 
-#: ./browser/about.pt:80
+#: ./browser/about.pt:87
 msgid "Actively promoting spatial techniques and cultural resource management, research, and application, we hope obtain a more wholesome grasp of all the cultural resources, thus extending its studies throughout the humanities."
 msgstr "積極推廣空間技術於文化資源之管理、研究與應用。並透過文化資源的全面性、完整性地掌握，延伸至人文社會科學的學術研究課題。"
 
-#: ./browser/about.pt:42
+#: ./browser/about.pt:49
 msgid "Any sector, or person, who are involved are able to add new information, edit, manage, and make query on various tangible and intangible cultural resources which are exhibited in the form of images."
 msgstr "讓有志參與的單位或個人能針對各類有形、無形之文化資源，進行新增、編輯、整理與查詢，並以圖像方式呈現。"
 
@@ -35,7 +34,7 @@ msgstr "讓有志參與的單位或個人能針對各類有形、無形之文化
 msgid "Applications"
 msgstr "應用議題"
 
-#: ./browser/about.pt:53
+#: ./browser/about.pt:60
 msgid "As of now (Nov. 2013), on top of the images we’ve collected, the accumulated cultural resources, nationwide, include 13,868 temples, 783 old monuments, 1,092 historical buildings, 4,278 old trees, etc."
 msgstr "現階段資料庫 (至102年11月為止) 除各類影像圖資外，全國性的文化資源包含寺廟 13,868 座、古蹟 783 筆、歷史建築 1,092 筆、老樹 4,278 筆等等；"
 
@@ -47,31 +46,31 @@ msgstr "文化資產"
 msgid "Atlas"
 msgstr "主題圖冊"
 
-#: ./browser/about.pt:68
+#: ./browser/about.pt:75
 msgid "Benefits of the System"
 msgstr "系統效益"
 
-#: ./browser/about.pt:51
+#: ./browser/about.pt:58
 msgid "Besides information obtained by official government units, we also needed the contribution of local groups and persons to supply information and assist the management of the system."
 msgstr "除相關政府單位提供的基礎資料外，更進一步由地方團體、個人提供並維護在地的文化資源資訊。"
 
-#: ./browser/about.pt:50
+#: ./browser/about.pt:57
 msgid "Both Plone and PostgreSQL are open source programs."
 msgstr "Plone 與 PostrgeSQL 均為開放源碼 (Open Source Software)。"
 
-#: ./browser/about.pt:20
+#: ./browser/about.pt:25
 msgid "CRGIS (Culture Resources Geographic Information System) is maintained by the GIS Center at Academia Sinica."
-msgstr "文化資源地理資訊系統 (Culture Resources Geographic Information System ,CRGIS) 由中央研究院人文社會科學研究中心地理資訊科學研究專題中心所建置。"
+msgstr "文化資源地理資訊系統 (Culture Resources Geographic Information System, CRGIS) 由中央研究院人文社會科學研究中心地理資訊科學研究專題中心所建置。"
 
-#: ./browser/about.pt:41
+#: ./browser/about.pt:48
 msgid "CRGIS extensively collects basic geographic information including temples, old monuments, historic buildings, old trees and Fengshi Yeh (Wind Lion God) and incorporates the concept of Web2.0, encouraging the public to become involved so as to provide a more wholesome information platform."
 msgstr "CRGIS 廣泛地蒐集包含寺廟、古蹟、歷史建築、老樹、風獅爺等文化資源基礎空間資訊 (圖 1)，並輔以 Web2.0 全民參與的概念，提供一完整資訊平台，"
 
-#: ./browser/about.pt:79
+#: ./browser/about.pt:86
 msgid "CRGIS is the most complete non-official platform providing information on cultural resources nationwide, integrating cultural resources in the general sense."
 msgstr "文化資源地理資訊系統期能提供全國最完整之「非政府官方」文化資源資訊平台，彙整廣義的文化資源資訊。"
 
-#: ./browser/about.pt:63
+#: ./browser/about.pt:70
 msgid "CRGIS mainly records two types of data – the locations of temples on GPS and routes of folk activities, as shown in Fig 2."
 msgstr "CRGIS 中與地方社會與民間信仰相關的空間資訊，主要為寺廟點位以及民俗活動路線紀錄兩種類型，如圖 2 所示。"
 
@@ -91,19 +90,19 @@ msgstr "嘉義市"
 msgid "Chiayi County"
 msgstr "嘉義縣"
 
-#: ./browser/about.pt:59
+#: ./browser/about.pt:66
 msgid "Consequently, they develop into various forms of both tangible and intangible cultural resources, and a database for the spatial information of temples, is then necessary for recording and managing these resources."
 msgstr "因此，寺廟空間資料庫的建置實有其必要性。"
 
-#: ./browser/about.pt:29
+#: ./browser/about.pt:36
 msgid "Contributors"
-msgstr "諮詢與參與人員"
+msgstr "諮詢和參與人員"
 
-#: ./browser/about.pt:54
+#: ./browser/about.pt:61
 msgid "Cultural resources of locality features include 122 Fengshi Yeh."
 msgstr "地方性的文化資源如金門縣風獅爺 122 座等。"
 
-#: ./browser/about.pt:71
+#: ./browser/about.pt:78
 msgid "Distribution of cultural resources"
 msgstr "文化資源的分布"
 
@@ -111,7 +110,7 @@ msgstr "文化資源的分布"
 msgid "Downloads"
 msgstr "資料下載"
 
-#: ./browser/about.pt:72
+#: ./browser/about.pt:79
 msgid "Enables query of various types of cultural resources within a specific range: e.g. distribution of historic sites, historic buildings, temples, and old trees in Taichung City."
 msgstr "在特定空間範圍中查詢各類文化資源： 如台中市的古蹟、歷史建築、寺廟、老樹的分布。"
 
@@ -123,19 +122,19 @@ msgstr "會議展覽"
 msgid "Festival"
 msgstr "廟會節慶"
 
-#: ./browser/about.pt:31
+#: ./browser/about.pt:39
 msgid "Field Studies"
 msgstr "田野調查"
 
-#: ./browser/about.pt:45
+#: ./browser/about.pt:52
 msgid "Fig. 1: Cultural Resource Geographic Information System"
 msgstr "圖 1 文化資源地理資訊系統畫面"
 
-#: ./browser/about.pt:66
+#: ./browser/about.pt:73
 msgid "Fig. 2: Types of spatial information on local societies and folk beliefs."
 msgstr "圖 2 CRGIS 中地方社會與民間信仰相關的空間資訊類型"
 
-#: ./browser/about.pt:48
+#: ./browser/about.pt:55
 msgid "Firstly, WebGis takes Google Map API as the platform for the images and combines it with PosgreSQL (spatial database) for management of the geographic information of the cultural resources and provide functions such as GIS query, overlaying of images, and other vextor and image layering."
 msgstr "Web GIS 採 Google Map API 作為圖台，搭配空間資料庫 PostrgeSQL 管理文化資源的空間資訊並提供 GIS 檢索、套疊各種向量、影像圖層等功能。"
 
@@ -151,7 +150,7 @@ msgstr "空間資訊技術"
 msgid "Guide"
 msgstr "系統操作說明"
 
-#: ./browser/about.pt:76
+#: ./browser/about.pt:83
 msgid "Historic materials, digital archives, and folk legends are all integrated into a single platform."
 msgstr "整合不同來源的資訊： 如史料、數位典藏成果、民間傳說等。"
 
@@ -175,7 +174,7 @@ msgstr "花蓮縣"
 msgid "Info"
 msgstr "訊息快遞"
 
-#: ./browser/about.pt:55
+#: ./browser/about.pt:62
 msgid "Information on temples mainly comes from the inventory of temples provided by the Ministry of the Interior, which is then updated by cultural historic workers (or teams) through their field research."
 msgstr "寺廟資料主要來自於初期內政部寺廟登記資料清冊以及後續地方文史工作團隊/者田野調查更新；"
 
@@ -183,15 +182,15 @@ msgstr "寺廟資料主要來自於初期內政部寺廟登記資料清冊以及
 msgid "Intangible"
 msgstr "無形文化資產"
 
-#: ./browser/about.pt:75
+#: ./browser/about.pt:82
 msgid "Integration of different types of resources"
 msgstr "整合不同資源"
 
-#: ./browser/about.pt:73
+#: ./browser/about.pt:80
 msgid "Integration of field studies"
 msgstr "田野調查成果整合"
 
-#: ./browser/about.pt:40
+#: ./browser/about.pt:47
 msgid "It also contains various types of images, including historical images (old maps) and contemporary images (Google satellite, topographic maps, etc...)."
 msgstr "此外並搭配各類影像圖資，包含歷史圖資 (台灣堡圖、各版次經建地形圖) 與當代圖資 (Google 衛星影像、地形圖、電子地圖) 等。"
 
@@ -235,7 +234,7 @@ msgstr "新聞消息"
 msgid "Online"
 msgstr "網路資源"
 
-#: ./browser/about.pt:62
+#: ./browser/about.pt:69
 msgid "Other attribute date obtained from local gazettes and censuses finally amounting to a total of 7,400 temples."
 msgstr "此外並參考地方誌與各類普查成果，總計彙整建置 7,400 座寺廟創建年代、沿革等基本屬性資料。"
 
@@ -251,11 +250,11 @@ msgstr "民俗遶境專區"
 msgid "Pingtung County"
 msgstr "屏東縣"
 
-#: ./browser/about.pt:49
+#: ./browser/about.pt:56
 msgid "Plone is adopted for content management of attribute data, which includes texts, photos, multi-media files, and provides a query function."
 msgstr "內容管理平台採用 Plone，管理文化資源的屬性資料，包含文字、照片、多媒體等，並提供綜合檢索等功能。"
 
-#: ./browser/about.pt:78
+#: ./browser/about.pt:85
 msgid "Prospect"
 msgstr "展望"
 
@@ -271,7 +270,7 @@ msgstr "相關團體"
 msgid "Resources"
 msgstr "相關資源"
 
-#: ./browser/about.pt:52
+#: ./browser/about.pt:59
 msgid "Since each type of cultural resources require knowledge in their specific realm, we also continuously invite specialists from all realms to supervise the validity of the information obtained before exhibiting them on the system."
 msgstr "此外，因為不同文化資源涉及不同專業領域知識，因此陸續邀請各領域專家學者把關各地匯集資訊的正確性。"
 
@@ -295,9 +294,9 @@ msgstr "臺北市"
 msgid "Taitung County"
 msgstr "臺東縣"
 
-#: ./browser/about.pt:39
+#: ./browser/about.pt:46
 msgid "Taking the concept of ‘space’ as its central axis, and combining it with GIS technology, CRGIS (Cultural Resources Geographic Information System) is a system platform that integrates various types of both tangible and intangible cultural resources and attribute data."
-msgstr "文化資源地理資訊系統 (Cultural Resources Geographic Information System,以下簡稱 CRGIS)，以『空間』為主軸概念，搭配地理資訊 (GIS) 技術，彙整各類有形、無形文化資源之空間及屬性資料。"
+msgstr "文化資源地理資訊系統 (Cultural Resources Geographic Information System, 以下簡稱 CRGIS)，以『空間』為主軸概念，搭配地理資訊 (GIS) 技術，彙整各類有形、無形文化資源之空間及屬性資料。"
 
 #: ./browser/sections.pt:19
 msgid "Tangible"
@@ -307,43 +306,47 @@ msgstr "有形文化資產"
 msgid "Taoyuan County"
 msgstr "桃園縣"
 
-#: ./browser/about.pt:74
+#: ./browser/about.pt:81
 msgid "Target object, buildings (point); routes, satellite images, maps (images), etc., can be exported and viewed through Google Earth."
 msgstr "整合學術田野調查成果： 目標物、建築物 (點)； 行經路線、各類路線 (線)； 衛星影像、地圖 (影像)； 匯出至 Google Earth 中瀏覽。"
 
-#: ./browser/about.pt:34
+#: ./browser/about.pt:42
 msgid "Team"
 msgstr "工作人員"
+
+#: ./browser/about.pt:398
+msgid "Temple Querying"
+msgstr "寺廟查詢功能"
 
 #: ./browser/sections.pt:33
 msgid "Temples"
 msgstr "寺廟資料"
 
-#: ./browser/about.pt:57
+#: ./browser/about.pt:64
 msgid "Temples, as a sector of our cultural resource, are the central hub of the people’s belief."
 msgstr "作為文化資源的一部份，寺廟作為人類生活中信仰活動的集中地。"
 
-#: ./browser/about.pt:60
+#: ./browser/about.pt:67
 msgid "The GIS Center at Academia Sinica executed the project 'Digital Archive of Spatial Information on Temples and Cultural Resources Geographic Information System', in which the temples in central and southern Taiwan and surrounding islands are located using GPS."
 msgstr "GIS 專題中心於 100 及 101 年度執行「文化資源地理資訊系統寺廟資料庫數位典藏計畫」，分別針對中、南部以及離島地區的寺廟，"
 
-#: ./browser/about.pt:47
+#: ./browser/about.pt:54
 msgid "The structure of the system includes two parts: WebGIS and Content Management System."
 msgstr "CRGIS 系統架構包含兩部分： Web GIS 與內容管理系統 (CMS)。"
 
-#: ./browser/about.pt:56
+#: ./browser/about.pt:63
 msgid "The website of the Ministry of Culture provides information on the monuments and historic buildings, and information on the Old Trees were obtained from the Taiwan Endemic Species Research Institute of the Ministry of Agriculture."
 msgstr "古蹟、歷史建築資料由文化部文化資料開放服務網取得；老樹資料由農委會特有生物研究保育中心提供。"
 
-#: ./browser/about.pt:61
+#: ./browser/about.pt:68
 msgid "Then, along with other attribute data, including year of construction, main deity of worship, photos, etc. are used as the main focus of field studies."
 msgstr "就其空間位置 (GPS 定位)、創建年代、主祀神明、照片 (外觀、主祀神明、歷史沿革) 等資訊，進行廣泛的田野調查。"
 
-#: ./browser/about.pt:69
+#: ./browser/about.pt:76
 msgid "Three main benefits:"
 msgstr "CRIS 能提供三項主要效益："
 
-#: ./browser/about.pt:81
+#: ./browser/about.pt:88
 msgid "We also insist on the concept of sharing, thus inviting all people to participate. Various units, teams, and knowledge providers will jointly manage and check the validity of the data, thus creating a sustainable information platform."
 msgstr "此外，秉持共享、共用的精神，積沙成塔、全民參與。 由各方單位、團體、地方知識提供者，共同維護資料的正確性與完整性，如此方能成為永續經營的資訊平台。"
 
@@ -351,7 +354,7 @@ msgstr "此外，秉持共享、共用的精神，積沙成塔、全民參與。
 msgid "Web GIS"
 msgstr "GIS 地圖"
 
-#: ./browser/about.pt:58
+#: ./browser/about.pt:65
 msgid "Worshiping events and celebrations developed following the lifestyles of the locals and communities."
 msgstr "隨著地方、聚落的生活需要，乃發展出各類神明祭祀活動、慶典 (遶境、神明祝壽、點光明燈、求藥籤) 等，從而構成許多有形、無形的文化資產。"
 
@@ -382,6 +385,16 @@ msgstr "中央研究院人社中心地理資訊科學研究專題中心 版權�
 #: ./browser/footer.pt:8
 msgid "copyright_title"
 msgstr "Copyright"
+
+#. Default: "About"
+#: ./browser/about.pt:15
+msgid "h1_about"
+msgstr "關於本系統"
+
+#. Default: "Guide"
+#: ./browser/about.pt:19
+msgid "h1_guide"
+msgstr "系統操作說明"
 
 #. Default: "Navigation"
 #: ./browser/sections.pt:2
