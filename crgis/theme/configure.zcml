@@ -1,10 +1,10 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:cmf="http://namespaces.zope.org/cmf"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="crgis.theme">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:cmf="http://namespaces.zope.org/cmf"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  i18n_domain="crgis.theme">
 
   <include package=".browser" />
 
@@ -13,16 +13,18 @@
   <cmf:registerDirectory name="crgis_theme" />
 
   <browser:resourceDirectory
-      name="crgis.theme"
-      directory="resources"
-      />
+    name="crgis.theme"
+    directory="resources" />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+    directory="overrides" />
 
   <genericsetup:registerProfile
-      name="default"
-      title="CRGIS Theme Package"
-      directory="profiles/default"
-      description="Extension profile for CRGIS Theme Package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    name="default"
+    title="CRGIS Theme Package"
+    directory="profiles/default"
+    description="Extension profile for CRGIS Theme Package"
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
 
 </configure>
