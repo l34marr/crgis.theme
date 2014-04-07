@@ -2,7 +2,12 @@
    title="Center for GIS, RCHSS, Academia Sinica"
    tal:attributes="href string:http://gis.rchss.sinica.edu.tw/;
                    target string:_blank">
-   <img src="++resource++crgis.theme/gislogo.png" alt="" /></a>
+   <img src="#" alt=""
+    tal:define="portal_state context/@@plone_portal_state;
+                portal_url portal_state/portal_url;
+                mylogo string:${portal_url}/++resource++crgis.theme/gislogo.png"
+    tal:attributes="src string:${mylogo};
+                    alt string:GIS Center Logo" /></a>
 <br />
 <a metal:define-macro="portal_logo"
    id="portal-logo"
