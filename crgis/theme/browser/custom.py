@@ -37,7 +37,7 @@ class FrontPage(BrowserView):
         return catalog(portal_type='News Item',
                        review_state='published',
                        path=path,
-                       sort_on='created',
+                       sort_on='effective',
                        sort_order='reverse',
                        sort_limit=5)[:5]
 
