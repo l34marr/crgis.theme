@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="crgis.theme"
+      interface="crgis.theme.interfaces.ICrgisThemeLayer"
+      />
+</layers>

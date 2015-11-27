@@ -1,35 +1,63 @@
-from setuptools import setup, find_packages
-import os
+# -*- coding: utf-8 -*-
+"""Installer for the crgis.theme package."""
 
-version = '0.1'
+from setuptools import find_packages
+from setuptools import setup
 
-setup(name='crgis.theme',
-      version=version,
-      description="CRGIS Theme Package",
-      long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.rst")).read(),
-      # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-      classifiers=[
+
+long_description = (
+    open('README.rst').read()
+    + '\n' +
+    'Contributors\n'
+    '============\n'
+    + '\n' +
+    open('CONTRIBUTORS.rst').read()
+    + '\n' +
+    open('CHANGES.rst').read()
+    + '\n')
+
+
+setup(
+    name='crgis.theme',
+    version='0.1',
+    description="CRGIS Theme Package",
+    long_description=long_description,
+    # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    classifiers=[
+        "Environment :: Web Environment",
         "Framework :: Plone",
+        "Framework :: Plone :: 4.3.7",
         "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Programming Language :: Python :: 2.7",
+        "Operating System :: OS Independent",
+        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    ],
+    keywords='Python Plone',
+    author='TsungWei Hu',
+    author_email='marr.tw@gmail.com',
+    url='http://pypi.python.org/pypi/crgis.theme',
+    license='GPL version 2',
+    packages=find_packages('src', exclude=['ez_setup']),
+    namespace_packages=['crgis'],
+    package_dir={'': 'src'},
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=[
+        'plone.api',
+        'setuptools',
+        'z3c.jbot',
+        'plone.app.theming',
+        'plone.app.themingplugins',
+    ],
+    extras_require={
+        'test': [
+            'plone.app.testing',
+            'plone.app.contenttypes',
+            'plone.app.robotframework[debug]',
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://github.com/l34marr/crgis.theme',
-      license='GPL',
-      packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['crgis'],
-      include_package_data=True,
-      zip_safe=False,
-      install_requires=[
-          'setuptools',
-      ],
-      entry_points="""
-      # -*- Entry points: -*-
-      [z3c.autoinclude.plugin]
-      target = plone
-      """,
-      )
+    },
+    entry_points="""
+    [z3c.autoinclude.plugin]
+    target = plone
+    """,
+)

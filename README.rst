@@ -1,16 +1,72 @@
-.. contents::
+.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide_addons.html
+   This text does not appear on pypi or github. It is a comment.
 
-Introduction
-============
+==============================================================================
+crgis.theme
+==============================================================================
 
-crgis.theme offers theme resources for the CRGIS project based on Sunburst.
+Tell me what your product does
+
+Features
+--------
+
+- Can be bullet points
+
+
+Examples
+--------
+
+This add-on can be seen in action at the following sites:
+- Is there a page on the internet where everybody can see the features?
+
+
+Documentation
+-------------
+
+Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
+
+
+Translations
+------------
+
+This product has been translated into
+
+- Klingon (thanks, K'Plai)
+
 
 Installation
-============
+------------
 
-Add this line in the eggs section of your ``buildout.cfg``::
+Install crgis.theme by adding it to your buildout::
+
+   [buildout]
+
+    ...
 
     eggs =
-        ...
         crgis.theme
 
+
+and then running "bin/buildout"
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/collective/crgis.theme/issues
+- Source Code: https://github.com/collective/crgis.theme
+- Documentation: https://docs.plone.org/foo/bar
+
+
+Support
+-------
+
+If you are having issues, please let us know.
+We have a mailing list located at: project@example.com
+
+
+License
+-------
+
+The project is licensed under the GPLv2.
