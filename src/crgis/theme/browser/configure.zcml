@@ -1,20 +1,18 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="crgis.theme">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  i18n_domain="crgis.theme">
 
-  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <!-- Set Overrides Folder for Just-a-Bunch-Of-Templates Product -->
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
-      directory="overrides"
-      layer="crgis.theme.interfaces.ICrgisThemeLayer"
-      />
+    directory="overrides"
+    layer="crgis.theme.interfaces.ICrgisThemeLayer" />
 
   <!-- Publish static files -->
   <browser:resourceDirectory
-      name="crgis.theme"
-      directory="static"
-      />
+    name="crgis.theme"
+    directory="static" />
 
 </configure>
