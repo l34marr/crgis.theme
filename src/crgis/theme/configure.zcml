@@ -13,7 +13,6 @@
   <include package=".browser" />
 
   <plone:static
-    name="crsig.theme"
     directory="resources"
     type="theme" />
 
