@@ -132,3 +132,25 @@ figure {
   display: block;
   margin-top: 2em;
 }
+
+/* for eea_result */
+.eeaAlbumEntry {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  height: 140px;
+  width: 143px;
+  margin: 0em;
+  padding: 0px 6px 0px 9px;
+  text-align: center;
+  background: #fff url(++resource++crgis.theme/eea-result.png) no-repeat top left;
+}
+.eeaAlbumEntryWrapper {
+  height: 30px;
+  width: 128px;
+  margin-bottom: 7px;
+}
+.eeaAlbumEntryTitle {
+  display: block;
+  margin-top: 2em;
+}
