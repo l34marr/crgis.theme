@@ -2,71 +2,38 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide_addons.html
    This text does not appear on pypi or github. It is a comment.
 
-==============================================================================
-crgis.theme
-==============================================================================
+Introduction
+============
 
-Tell me what your product does
+crgis.theme offers theme resources for the `CRGIS project`_.
 
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+.. _CRGIS project: http://crgis.rchss.sinica.edu.tw/about
 
 Installation
-------------
+============
 
-Install crgis.theme by adding it to your buildout::
+This package is tested with Plone 4.3.2+ environment.
+The easiest way is to use Plone 4.3.x UnifiedInstaller to get started.
+Add this line in the eggs section of your ``buildout.cfg``::
 
-   [buildout]
+    [buildout]
 
     ...
 
     eggs =
+        ...
         crgis.theme
 
+And then run "bin/buildout".
 
-and then running "bin/buildout"
+Copyright and License
+=====================
 
+`CRGIS (Culture Resource Geographic Information System)`_ is developed and run
+by `Center for GIS, RCHSS, Academia Sinica`_.
+The package source code is licensed under the GNU General Public License;
+either version 2 of the License, or (at your option) any later version.
 
-Contribute
-----------
+.. _CRGIS (Culture Resources Geographic Information System): http://crgis.rchss.sinica.edu.tw/about
+.. _Center for GIS, RCHSS, Academia Sinica: http://gis.rchss.sinica.edu.tw/
 
-- Issue Tracker: https://github.com/collective/crgis.theme/issues
-- Source Code: https://github.com/collective/crgis.theme
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
-
-
-License
--------
-
-The project is licensed under the GPLv2.
