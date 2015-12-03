@@ -29,11 +29,11 @@ And then run "bin/buildout".
 Copyright and License
 =====================
 
-`CRGIS (Culture Resource Geographic Information System)`_ is developed and run
+`CRGIS`_ (Culture Resource Geographic Information System) is developed and run
 by `Center for GIS, RCHSS, Academia Sinica`_.
 The package source code is licensed under the GNU General Public License;
 either version 2 of the License, or (at your option) any later version.
 
-.. _CRGIS (Culture Resources Geographic Information System): http://crgis.rchss.sinica.edu.tw/about
+.. _CRGIS: http://crgis.rchss.sinica.edu.tw/about
 .. _Center for GIS, RCHSS, Academia Sinica: http://gis.rchss.sinica.edu.tw/
 
