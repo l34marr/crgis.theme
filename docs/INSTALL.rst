@@ -31,3 +31,5 @@ recipe to manage your project, here is the easiest way:
 
 * Go *Site Setup* *Add-ons* to activate the package:
 
+.. image:: theme-installed.png
+
