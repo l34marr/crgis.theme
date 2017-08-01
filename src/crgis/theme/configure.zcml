@@ -1,6 +1,5 @@
 <configure
   xmlns="http://namespaces.zope.org/zope"
-  xmlns:five="http://namespaces.zope.org/five"
   xmlns:plone="http://namespaces.plone.org/plone"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   xmlns:i18n="http://namespaces.zope.org/i18n"
@@ -13,6 +12,7 @@
   <include package=".browser" />
 
   <plone:static
+    name="crgis-theme"
     directory="resources"
     type="theme" />
 
@@ -20,14 +20,19 @@
     name="default"
     title="CRGIS Theme"
     directory="profiles/default"
-    description="CRGIS Theme Extension Profile"
-    provides="Products.GenericSetup.interfaces.EXTENSION" />
+    description="CRGIS Theme Profile"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    post_handler=".setuphandlers.post_install" />
 
-  <genericsetup:importStep
-    name="crgis.theme-postInstall"
-    title="CRGIS Theme post_install Import Step"
-    description="CRGIS Theme Post Install Import Step"
-    handler=".setuphandlers.post_install">
-  </genericsetup:importStep>
+  <genericsetup:registerProfile
+    name="uninstall"
+    title="CRGIS Theme Uninstall"
+    description="CRGIS Theme UnInstall Profile"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    post_handler=".setuphandlers.uninstall" />
+
+  <utility
+    name="crgis.theme-hiddenprofiles"
+    factory=".setuphandlers.HiddenProfiles" />
 
 </configure>

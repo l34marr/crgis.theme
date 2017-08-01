@@ -22,11 +22,11 @@ setup(
     version='0.1',
     description="CRGIS Theme Package",
     long_description=long_description,
-    # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 4.3.7",
+        "Framework :: Plone :: 5.0",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
         "Operating System :: OS Independent",
@@ -35,7 +35,7 @@ setup(
     keywords='Python Plone',
     author='TsungWei Hu',
     author_email='marr.tw@gmail.com',
-    url='http://pypi.python.org/pypi/crgis.theme',
+    url='https://pypi.python.org/pypi/crgis.theme',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['crgis'],
@@ -44,6 +44,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'plone.api',
+        'Products.GenericSetup>=1.8.2',
         'setuptools',
         'z3c.jbot',
         'plone.app.theming',
@@ -52,6 +53,10 @@ setup(
     extras_require={
         'test': [
             'plone.app.testing',
+            # Plone KGS does not use this version, because it would break
+            # Remove if your package shall be part of coredev.
+            # plone_coredev tests as of 2016-04-01.
+            'plone.testing>=5.0.0',
             'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
         ],

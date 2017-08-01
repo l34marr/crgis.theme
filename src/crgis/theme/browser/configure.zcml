@@ -11,8 +11,9 @@
     layer="crgis.theme.interfaces.ICrgisThemeLayer" />
 
   <!-- Publish static files -->
-  <browser:resourceDirectory
+  <plone:static
     name="crgis.theme"
+    type="plone"
     directory="static" />
 
 </configure>
