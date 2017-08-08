@@ -15,7 +15,6 @@ body {
 /* Header */
 header {
 	clear: both;
-	border-top: 5px solid #EDEDED;
 	background: #f6f6f6;
 	background: -moz-linear-gradient(top,  #f6f6f6 0%, #ffffff 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#ffffff));
@@ -99,7 +98,7 @@ button.btn-responsive-nav {
 header div.social-icons {
 	clear: right;
 	float: right;
-	margin-top: -3px;
+	margin-top: -13px;
 	margin-left: 5px;
 	position: relative;
 }
@@ -112,7 +111,7 @@ header div.search + div.social-icons {
 }
 
 body.sticky-menu-active header div.social-icons {
-	margin-top: -1px;
+	margin-top: -6px;
 }
 
 /* Header Container */
@@ -145,6 +144,13 @@ body.boxed header.flat-menu.darken-top-border > div.container {
 body.boxed header.single-menu > div.container {
 	height: 94px;
 	margin-bottom: -80px;
+}
+
+/* Personaltools */
+header div ul#personaltools {
+	float: right;
+	margin: 10px 0 0 15px;
+	position: relative;
 }
 
 /* Search */
@@ -1559,7 +1565,7 @@ div.page-not-found-main {
 
 /* Footer */
 footer {
-	background: #121214;
+	background: #121214 url(../img/banner.jpg) no-repeat top;
 	border-top: 4px solid #1F1F1F;
 	font-size: 0.9em;
 	margin-top: 50px;
