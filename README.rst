@@ -3,15 +3,15 @@
 Introduction
 ============
 
-crgis.theme offers theme resources for the `CRGIS project`_ based on Sunburst.
+crgis.theme offers theme resources for the `CRGIS project`_ based on Diazo and Sunburst.
 
 .. _CRGIS project: http://crgis.rchss.sinica.edu.tw/about
 
 Installation
 ============
 
-This package is tested with Plone 4.3.2+ environment.
-The easiest way is to use Plone 4.3.x UnifiedInstaller to get started.
+This package is tested with Plone 4.3+ environment.
+The easiest way is to use Plone 4.3+ UnifiedInstaller to get started.
 Add this line in the eggs section of your ``buildout.cfg``::
 
     eggs =

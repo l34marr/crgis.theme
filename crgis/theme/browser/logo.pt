@@ -1,21 +1,23 @@
+<tal:def define="portal_state context/@@plone_portal_state;
+                 portal_url portal_state/portal_url;
+                 gislogo string:${portal_url}/++theme++crgis/img/gislogo.png;
+                 mylogo string:${portal_url}/++theme++crgis/img/logo.png">
 <a href="#"
-   title="Center for GIS, RCHSS, Academia Sinica"
-   tal:attributes="href string:http://gis.rchss.sinica.edu.tw/;
-                   target string:_blank">
-   <img src="#" alt=""
-    tal:define="portal_state context/@@plone_portal_state;
-                portal_url portal_state/portal_url;
-                mylogo string:${portal_url}/++resource++crgis.theme/gislogo.png"
-    tal:attributes="src string:${mylogo};
-                    alt string:GIS Center Logo" /></a>
+  title="Center for GIS, RCHSS, Academia Sinica"
+  tal:attributes="href string:http://gis.rchss.sinica.edu.tw/;
+                  target string:_blank">
+  <img src="#" alt=""
+   tal:attributes="src string:${gislogo};
+                   alt string:GIS Center Logo" /></a>
 <br />
 <a metal:define-macro="portal_logo"
-   id="portal-logo"
-   title="Home"
-   accesskey="1"
-   tal:attributes="href view/navigation_root_url;
-                   title view/navigation_root_title"
-   i18n:domain="plone"
-   i18n:attributes="title">
-    <img src="logo.jpg" alt=""
-         tal:replace="structure view/logo_tag" /></a>
+  id="portal-logo"
+  title="Home"
+  accesskey="1"
+  tal:attributes="href view/navigation_root_url;
+                  title view/navigation_root_title"
+  i18n:domain="plone"
+  i18n:attributes="title">
+  <img src="logo.jpg" alt=""
+   tal:attributes="src string:${mylogo}" /></a>
+</tal:def>

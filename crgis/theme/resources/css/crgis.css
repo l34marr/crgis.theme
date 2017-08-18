@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #portal-top {
-  background: #fff url(++resource++crgis.theme/banner.jpg) no-repeat top left;
+  background: #fff url(../img/banner.jpg) no-repeat top left;
 }
 
 #portal-top div.width-full {
@@ -60,13 +60,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #portal-footer-wrapper {
-  background: #fff url(++resource++crgis.theme/footer.jpg) no-repeat bottom;
+  background: #fff url(../img/footer.jpg) no-repeat bottom;
   text-align: center;
   font-size: 75%;
 }
 
 .section-temples #portal-top { 
-  background: #fff url(++resource++crgis.theme/banner-t.jpg) no-repeat top;
+  background: #fff url(../img/banner-t.jpg) no-repeat top;
 }
 
 #LSResult {
@@ -121,7 +121,7 @@ figure {
   margin: 0em;
   padding: 0px 6px 0px 9px;
   text-align: center;
-  background: #fff url(++resource++crgis.theme/polaroid.png) no-repeat top left;
+  background: #fff url(../img/polaroid.png) no-repeat top left;
 }
 .templeAlbumEntryWrapper {
   height: 30px;
@@ -129,28 +129,6 @@ figure {
   margin-bottom: 7px;
 }
 .templeAlbumEntryTitle {
-  display: block;
-  margin-top: 2em;
-}
-
-/* for eea_result */
-.eeaAlbumEntry {
-  float: left;
-  position: relative;
-  overflow: hidden;
-  height: 140px;
-  width: 143px;
-  margin: 0em;
-  padding: 0px 6px 0px 9px;
-  text-align: center;
-  background: #fff url(++resource++crgis.theme/eea-result.png) no-repeat top left;
-}
-.eeaAlbumEntryWrapper {
-  height: 30px;
-  width: 128px;
-  margin-bottom: 7px;
-}
-.eeaAlbumEntryTitle {
   display: block;
   margin-top: 2em;
 }

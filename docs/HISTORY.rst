@@ -4,4 +4,4 @@ Changelog
 0.1dev (unreleased)
 -------------------
 
-- Initial release
+- Work with Plone 4.3.x Diazo
