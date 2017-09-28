@@ -86,7 +86,7 @@
         <tal:samedate condition="python: samedate and not sametime"
              replace="python:toLocalizedTime(item_start,long_format=0)" />
         <tal:daterange condition="python: not samedate and not sametime"
-             replace="python:toLocalizedTime(item_start,long_format=0) + ' 到 ' + toLocalizedTime(item_end,long_format=0)" />
+             replace="python:toLocalizedTime(item_start,long_format=0) + '-' + toLocalizedTime(item_end,long_format=0)" />
         <tal:location condition="python: obj.location"
              replace="python: ', ' + obj.location" />
       </span>
