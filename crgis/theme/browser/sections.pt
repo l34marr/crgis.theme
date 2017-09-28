@@ -55,9 +55,9 @@
       </li>
       <li>
        <a href="#"
-        tal:attributes="href string:${root_url}/temples/TaoyuanCounty"
+        tal:attributes="href string:${root_url}/temples/TaoyuanCity"
         i18n:translate="">
-        Taoyuan County</a>
+        Taoyuan City</a>
       </li>
       <li>
        <a href="#"

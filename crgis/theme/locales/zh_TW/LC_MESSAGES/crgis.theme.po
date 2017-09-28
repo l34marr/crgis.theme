@@ -303,8 +303,8 @@ msgid "Tangible"
 msgstr "有形文化資產"
 
 #: ./browser/sections.pt:57
-msgid "Taoyuan County"
-msgstr "桃園縣"
+msgid "Taoyuan City"
+msgstr "桃園市"
 
 #: ./browser/about.pt:81
 msgid "Target object, buildings (point); routes, satellite images, maps (images), etc., can be exported and viewed through Google Earth."
@@ -371,10 +371,10 @@ msgstr "雲林縣"
 msgid "best_viewed"
 msgstr "‧最佳瀏覽狀態：Internet Explorer 7.0 或 Firefox 3.6 以上版本 ‧最佳螢幕解析度：1024x768"
 
-#. Default: "Tel: (02)27821693 Fax: (02)27898191 Address: 128 Academia Road, Section 2, Nankang, Taipei 115, Taiwan"
+#. Default: "Tel: (02)27857108 Fax: (02)27857109 Address: 128 Academia Road, Section 2, Nankang, Taipei 115, Taiwan"
 #: ./browser/footer.pt:17
 msgid "contact_info"
-msgstr "‧電話：(02)27821693‧ 傳真：(02)27898191 ‧地址：115 台北市南港區研究院路二段 128 號"
+msgstr "‧電話：(02)27857108‧ 傳真：(02)27857109 ‧地址：115 台北市南港區研究院路二段 128 號"
 
 #. Default: "Center for GIS, RCHSS, Academia Sinica ${copyright} 2009-${current_year}"
 #: ./browser/footer.pt:11
