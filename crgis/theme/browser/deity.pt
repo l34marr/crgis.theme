@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="crgis.theme">
+<body>
+
+<metal:content-core fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+<tal:catalog define="catalog python:context.portal_catalog;
+  brain python:catalog({'Type':'Temple', 'deity_host':'deity_001'});
+  selected python:brain[:100]">
+<h2><span tal:replace="python: len(brain)" /> Registered Temples</h2>
+<ul>
+  <li tal:repeat="item selected">
+    <a tal:attributes="href item/getURL" tal:content="item/Title" target="_blank" />
+  </li>
+</ul>
+</tal:catalog>
+
+  </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

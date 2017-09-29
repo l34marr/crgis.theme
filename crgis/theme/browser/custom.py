@@ -11,6 +11,7 @@ from Products.Five import BrowserView
 
 from crgis.theme.interfaces import IFrontPage
 from crgis.theme.interfaces import IAboutView
+from crgis.theme.interfaces import IDeityView
 
 
 class FrontPage(BrowserView):
@@ -70,4 +71,9 @@ class FrontPage(BrowserView):
 class AboutView(BrowserView):
 
     implements(IAboutView)
+
+
+class DeityView(BrowserView):
+
+    implements(IDeityView)
 

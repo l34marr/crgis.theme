@@ -14,3 +14,7 @@ class IAboutView(Interface):
     """Browser View for About Logic
     """
 
+class IDeityView(Interface):
+    """Browser View for Deity Logic
+    """
+
