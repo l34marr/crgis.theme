@@ -19,6 +19,10 @@
     <!--revslider-->
     <link rel="stylesheet" href="css/revslider/settings.css"> <!--revslider-->
 
+    <!--leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <style>#mapid {height: 540px;}</style>
     <!--END CSS-->
     
     <!--google fonts-->
@@ -892,7 +896,42 @@
         </div>
 
             <div class="grid grid_12">
+            <div id="mapid"></div>
             </div>
+
+<script src="wangye.js" type="text/javascript"></script>
+
+<script>
+var mymap = L.map('mapid').setView([23.805, 120.09], 8);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+}).addTo(mymap);
+
+function onEachFeature(feature, layer) {
+    var popupContent = "";
+    if (feature.properties && feature.properties.popupContent) {
+        popupContent += feature.properties.popupContent;
+    }
+    layer.bindPopup(popupContent);
+}
+
+L.geoJSON([national, direct], {
+    style: function (feature) {
+        return feature.properties && feature.properties.style;
+    },
+    onEachFeature: onEachFeature,
+    pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, {
+            radius: 8,
+            fillOpacity: 0.8
+        });
+    }
+}).addTo(mymap);
+</script>
 
 <a name="about"></a>
 
