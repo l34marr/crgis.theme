@@ -95,7 +95,7 @@
                                     <a href="#news">最新消息</a>
                                 </li>
                                 <li class="blue">
-                                    <a href="#overview">概況簡介</a>
+                                    <a href="#overview">王爺信仰簡介</a>
                                 </li>
                                 <li class="yellow nicdark_megamenu">
                                     <a href="#">王爺文化資產</a>
@@ -476,7 +476,7 @@
 <section class="nicdark_section">
 
     <!--start nicdark_container-->
-    <div class="nicdark_container nicdark_clearfix">
+    <div id="by-area" class="nicdark_container nicdark_clearfix">
 
 
         <div class="nicdark_space50"></div>
@@ -919,7 +919,7 @@ function onEachFeature(feature, layer) {
     layer.bindPopup(popupContent);
 }
 
-L.geoJSON([national, direct], {
+L.geoJSON([ntl, ctl], {
     style: function (feature) {
         return feature.properties && feature.properties.style;
     },
@@ -927,6 +927,20 @@ L.geoJSON([national, direct], {
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, {
             radius: 8,
+            fillOpacity: 0.8,
+            color: 'orange'
+        });
+    }
+}).addTo(mymap);
+
+L.geoJSON([tpl], {
+    style: function (feature) {
+        return feature.properties && feature.properties.style;
+    },
+    onEachFeature: onEachFeature,
+    pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, {
+            radius: 6,
             fillOpacity: 0.8
         });
     }
