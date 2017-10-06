@@ -3,26 +3,443 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
-      metal:use-macro="context/main_template/macros/master"
       i18n:domain="crgis.theme">
-<body>
+<body tal:define="results python: view.wyByArea();
+  klc python:results['KeelungCity'];
+  tpc python:results['TaipeiCity'];
+  ntc python:results['NewTaipeiCity'];
+  tyc python:results['TaoyuanCity'];
+  hcc python:results['HsinchuCity'];
+  hct python:results['HsinchuCounty'];
+  mlt python:results['MiaoliCounty'];
+  tcc python:results['TaichungCity'];
+  ntt python:results['NantouCounty'];
+  cht python:results['ChanghuaCounty'];
+  ylt python:results['YunlinCounty'];
+  cyc python:results['ChiayiCity'];
+  cyt python:results['ChiayiCounty'];
+  tnc python:results['TainanCity'];
+  khc python:results['KaohsiungCity'];
+  ptt python:results['PingtungCounty'];
+  ilt python:results['YilanCounty'];
+  hlt python:results['HualienCounty'];
+  ttt python:results['TaitungCounty'];
+  pht python:results['PenghuCounty'];
+  kmt python:results['KinmenCounty'];
+  lct python:results['LienchiangCounty']">
 
-<metal:content-core fill-slot="content-core">
-  <metal:content-core define-macro="content-core">
+<div id="by-area" class="nicdark_container nicdark_clearfix">
 
-<tal:catalog define="catalog python:context.portal_catalog;
-  brain python:catalog({'Type':'Temple', 'deity_host':'deity_001'});
-  selected python:brain[:100]">
-<h2><span tal:replace="python: len(brain)" /> Registered Temples</h2>
-<ul>
-  <li tal:repeat="item selected">
-    <a tal:attributes="href item/getURL" tal:content="item/Title" target="_blank" />
-  </li>
-</ul>
-</tal:catalog>
+  <div class="nicdark_space50"></div>
 
-  </metal:content-core>
-</metal:content-core>
+  <div class="grid grid_12">
+    <h1 class="subtitle greydark">分區列表</h1>
+    <div class="nicdark_space20"></div>
+    <h3 class="subtitle grey">依縣市區域顯示 <span tal:replace="python: len(results)" /></h3>
+    <div class="nicdark_space20"></div>
+    <div class="nicdark_divider left big"><span class="nicdark_bg_blue nicdark_radius"></span></div>
+    <div class="nicdark_space10"></div>
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">基隆市</h4>
+      </div>
+
+      <tal:klc repeat="item klc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:klc>
+
+      <div class="nicdark_textevidence nicdark_bg_blue">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(klc)" /></h5>
+      <i class="icon-brush nicdark_iconbg right medium blue"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">臺北市</h4>
+      </div>
+
+      <tal:tpc repeat="item tpc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:tpc>
+
+      <div class="nicdark_textevidence nicdark_bg_yellow">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(tpc)" /></h5>
+      <i class="icon-music-outline nicdark_iconbg right medium yellow"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">新北市</h4>
+      </div>
+
+      <tal:ntc repeat="item ntc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:ntc>
+
+      <div class="nicdark_textevidence nicdark_bg_orange">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(ntc)" /></h5>
+      <i class="icon-dribbble nicdark_iconbg right medium orange"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="nicdark_space20"></div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">桃園市</h4>
+      </div>
+
+      <tal:tyc repeat="item tyc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:tyc>
+
+      <div class="nicdark_textevidence nicdark_bg_blue">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(tyc)" /></h5>
+      <i class="icon-brush nicdark_iconbg right medium blue"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">新竹縣市</h4>
+      </div>
+
+      <tal:hcc repeat="item hcc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:hcc>
+      <tal:hct repeat="item hct">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:hct>
+
+      <div class="nicdark_textevidence nicdark_bg_yellow">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(hcc)+len(hct)" /></h5>
+      <i class="icon-music-outline nicdark_iconbg right medium yellow"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">苗栗縣</h4>
+      </div>
+
+      <tal:mlt repeat="item mlt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:mlt>
+
+      <div class="nicdark_textevidence nicdark_bg_orange">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(mlt)" /></h5>
+      <i class="icon-dribbble nicdark_iconbg right medium orange"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="nicdark_space20"></div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">臺中市</h4>
+      </div>
+
+      <tal:tcc repeat="item tcc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:tcc>
+
+      <div class="nicdark_textevidence nicdark_bg_blue">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(tcc)" /></h5>
+      <i class="icon-brush nicdark_iconbg right medium blue"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">南投縣</h4>
+      </div>
+
+      <tal:ntt repeat="item ntt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:ntt>
+
+      <div class="nicdark_textevidence nicdark_bg_yellow">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(ntt)" /></h5>
+      <i class="icon-music-outline nicdark_iconbg right medium yellow"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">彰化縣</h4>
+      </div>
+
+      <tal:cht repeat="item cht">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:cht>
+
+      <div class="nicdark_textevidence nicdark_bg_orange">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(cht)" /></h5>
+      <i class="icon-dribbble nicdark_iconbg right medium orange"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="nicdark_space20"></div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">雲林縣</h4>
+      </div>
+
+      <tal:ylt repeat="item ylt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:ylt>
+
+      <div class="nicdark_textevidence nicdark_bg_blue">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(ylt)" /></h5>
+      <i class="icon-brush nicdark_iconbg right medium blue"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">嘉義縣市</h4>
+      </div>
+
+      <tal:cyc repeat="item cyc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:cyc>
+      <tal:cyt repeat="item cyt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:cyt>
+
+      <div class="nicdark_textevidence nicdark_bg_yellow">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(cyc)+len(cyt)" /></h5>
+      <i class="icon-music-outline nicdark_iconbg right medium yellow"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">臺南市</h4>
+      </div>
+
+      <tal:tnc repeat="item tnc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:tnc>
+
+      <div class="nicdark_textevidence nicdark_bg_orange">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(tnc)" /></h5>
+      <i class="icon-dribbble nicdark_iconbg right medium orange"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="nicdark_space20"></div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">高雄市</h4>
+      </div>
+
+      <tal:khc repeat="item khc">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:khc>
+
+      <div class="nicdark_textevidence nicdark_bg_blue">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(khc)" /></h5>
+      <i class="icon-brush nicdark_iconbg right medium blue"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">屏東縣</h4>
+      </div>
+
+      <tal:ptt repeat="item ptt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:ptt>
+
+      <div class="nicdark_textevidence nicdark_bg_yellow">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(ptt)" /></h5>
+      <i class="icon-music-outline nicdark_iconbg right medium yellow"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">澎湖縣 金門縣 連江縣</h4>
+      </div>
+
+      <tal:ilt repeat="item ilt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:ilt>
+
+      <div class="nicdark_textevidence nicdark_bg_orange">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(ilt)" /></h5>
+      <i class="icon-dribbble nicdark_iconbg right medium orange"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="nicdark_space20"></div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">宜蘭縣</h4>
+      </div>
+
+      <tal:hlt repeat="item hlt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:hlt>
+
+      <div class="nicdark_textevidence nicdark_bg_blue">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(hlt)" /></h5>
+      <i class="icon-brush nicdark_iconbg right medium blue"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">花蓮縣</h4>
+      </div>
+
+      <tal:ttt repeat="item ttt">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:ttt>
+
+      <div class="nicdark_textevidence nicdark_bg_yellow">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(ttt)" /></h5>
+      <i class="icon-music-outline nicdark_iconbg right medium yellow"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid_4">
+
+    <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow center">
+
+      <div class="nicdark_textevidence nicdark_bg_greydark nicdark_radius_top">
+      <h4 class="white nicdark_margin20">臺東縣</h4>
+      </div>
+
+      <tal:pht repeat="item pht">
+      <a href="#" tal:attributes="href item/getURL" tal:content="item/Title" target="_blank">temple</a>
+      </tal:pht>
+
+      <div class="nicdark_textevidence nicdark_bg_orange">
+      <h5 class="white nicdark_margin20"><span tal:replace="python:len(pht)" /></h5>
+      <i class="icon-dribbble nicdark_iconbg right medium orange"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+<a name="by-map"></a>
+
+  <div class="nicdark_space50"></div>
+
+</div>
 
 </body>
 </html>
