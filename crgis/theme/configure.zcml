@@ -4,6 +4,7 @@
   xmlns:i18n="http://namespaces.zope.org/i18n"
   xmlns:browser="http://namespaces.zope.org/browser"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:plone="http://namespaces.plone.org/plone"
   i18n_domain="crgis.theme">
 
   <include package=".browser" />
@@ -15,6 +16,11 @@
   <browser:resourceDirectory
     name="crgis.theme"
     directory="resources" />
+
+  <plone:static
+    name="wangye"
+    type="theme"
+    directory="wangye" />
 
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot

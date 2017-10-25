@@ -1,0 +1,45 @@
+<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ tal:define="portal_state context/@@plone_portal_state;
+          context_state context/@@plone_context_state;
+          plone_view context/@@plone;
+          plone_layout context/@@plone_layout;
+          lang portal_state/language;
+          view nocall:view | nocall: plone_view;
+          dummy python: plone_layout.mark_view(view);
+          portal_url portal_state/portal_url;
+          checkPermission nocall: context/portal_membership/checkPermission;
+          site_properties context/portal_properties/site_properties;
+          ajax_include_head request/ajax_include_head | nothing;
+          ajax_load python:False;"
+ i18n:domain="crgis.theme"
+ tal:attributes="lang lang;">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="地理資訊系統, 歷史文化" />
+    <meta name="description" content="王爺信仰地圖">
+    <meta name="author" content="中央研究院人社中心 地理資訊科學研究專題中心">
+    <meta property="og:title" content="王爺信仰地圖" />
+    <meta property="og:type" content="article" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>王爺信仰地圖</title>
+    <style type="text/css">
+      body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+    </style>
+
+</head>
+
+<body>
+<section style="background: url(http://crgis.rchss.sinica.edu.tw/++theme++crgis/img/banner.jpg) 50% 0 fixed no-repeat">
+<h1 style="font-size: 46px;font-family: '標楷體'; color: #fff; -webkit-margin-before: 0; -webkit-margin-after: 0;">王爺信仰地圖</h1>
+</section>
+            <iframe style="border:none;" width="100%" height="100%" src="http://140.109.161.34:8080/geoexplorer/composer/#maps/3" />
+</body>
+
+</html>
