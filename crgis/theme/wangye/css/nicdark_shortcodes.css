@@ -99,7 +99,7 @@ JQUERY UI
 .nicdark_bg_orangedark{ background-color: #df764e; }
 .nicdark_bg_reddark{ background-color: #c86969; }
 .nicdark_bg_yellowdark{ background-color: #e0b84e; }
-.nicdark_bg_gradient{ 
+.nicdark_bg_gradient{
 	background: #74cee4; /* Old browsers */
 	background: -moz-linear-gradient(left,  #74cee4 0%, #66ce9c 16%, #edbf47 32%, #ec774b 49%, #74cee4 65%, #66ce9c 83%, #edbf47 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#74cee4), color-stop(16%,#66ce9c), color-stop(32%,#edbf47), color-stop(49%,#ec774b), color-stop(65%,#74cee4), color-stop(83%,#66ce9c), color-stop(100%,#edbf47)); /* Chrome,Safari4+ */
@@ -179,7 +179,7 @@ JQUERY UI
 
 /* 6 - START LOGO*/
 .nicdark_logo{ float: left; position: relative; width: 10px; height: 10px; }
-.nicdark_logo img{ position: absolute; width: 135px; margin-top: 3px; border:0;}
+.nicdark_logo img{ position: absolute; margin-top: -18px; border:0;}
 /*END LOGO*/
 
 
@@ -594,7 +594,7 @@ JQUERY UI
 	-o-transition:all 500ms;
 	transition:all 500ms;
 }
-.nicdark_zoom:hover	
+.nicdark_zoom:hover
 {
 	-webkit-transform:scale(1.2, 1.2);
 	-o-transform:scale(1.2, 1.2);
