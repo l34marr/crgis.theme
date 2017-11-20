@@ -53,4 +53,11 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      for="*"
+      name="wgye_template"
+      class=".main_template.WgyeTemplate"
+      permission="zope2.View"
+      />
+
 </configure>

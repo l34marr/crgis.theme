@@ -13,3 +13,6 @@ class IAboutView(Interface):
     """Browser View for About Logic
     """
 
+class IWgyeTemplate(Interface):
+    """Interface to the view that generated the wgye_template
+    """
