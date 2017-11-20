@@ -170,7 +170,9 @@ p.medium { font-size: 17px; text-align: justify; }
 .nicdark_parallaxx_img7 { background: url(../img/parallax/img7.jpg) 50% 0 fixed; background-size:cover; }
 .nicdark_parallaxx_img8 { background: url(../img/parallax/img8.jpg) 50% 0 fixed; background-size:cover; }
 
-.nicdark_parallaxx_banner { background: url(../img/banner.jpg) 50% 0 fixed no-repeat; background-size:initial; }
+.wy_banner { background: url(../img/banner.jpg) 50% 0 fixed no-repeat; background-size:initial; }
+.mz_banner { background: url(../img/parallax/img3.jpg) 50% 0 fixed no-repeat; background-size:initial; }
+.xt_banner { background: url(../img/parallax/img3.jpg) 50% 0 fixed no-repeat; background-size:initial; }
 .nicdark_parallaxx_img-single-teacher-1 { background: url(../img/parallax/img-single-teacher-1.jpg) 50% 0 fixed; background-size:cover; }
 .nicdark_parallaxx_img-single-teacher-2 { background: url(../img/parallax/img-single-teacher-2.jpg) 50% 0 fixed; background-size:cover; }
 
