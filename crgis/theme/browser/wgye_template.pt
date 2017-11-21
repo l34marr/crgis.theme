@@ -142,13 +142,13 @@
                                     </ul>
                                 </li>
                                 <li class="green">
-                                    <a href="#by-name">王爺姓氏</a>
+                                    <a href="/wangye/#by-name">王爺宮廟地圖</a>
                                 </li>
                                 <li class="orange">
-                                    <a href="#by-area">全國王爺宮廟</a>
+                                    <a href="/wangye/#by-area">全國王爺宮廟</a>
                                 </li>
                                 <li class="red">
-                                    <a href="#by-map">王爺宮廟地圖</a>
+                                    <a href="#by-name">王爺姓氏</a>
                                 </li>
                                 <li class="grey">
                                     <a href="#about">關於</a>
