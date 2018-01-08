@@ -1,63 +1,68 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser">
+ xmlns="http://namespaces.zope.org/zope"
+ xmlns:browser="http://namespaces.zope.org/browser">
 
   <browser:viewlet
-      name="plone.htmlhead.title"
-      manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
-      class=".viewlets.TitleViewlet"
-      permission="zope2.View"
-      layer="crgis.theme.interfaces.ICustomTheme"
-      />
+    name="plone.htmlhead.title"
+    manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+    class=".viewlets.TitleViewlet"
+    permission="zope2.View"
+    layer="crgis.theme.interfaces.ICustomTheme" />
 
   <browser:viewlet
-      name="plone.logo"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.LogoViewlet"
-      template="logo.pt"
-      permission="zope2.View"
-      layer="crgis.theme.interfaces.ICustomTheme"
-      />
+    name="plone.logo"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class=".viewlets.LogoViewlet"
+    template="logo.pt"
+    permission="zope2.View"
+    layer="crgis.theme.interfaces.ICustomTheme" />
 
   <browser:viewlet
-      name="plone.global_sections"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
-      template="sections.pt"
-      permission="zope2.View"
-      layer="crgis.theme.interfaces.ICustomTheme"
-      />
+    name="plone.global_sections"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+    template="sections.pt"
+    permission="zope2.View"
+    layer="crgis.theme.interfaces.ICustomTheme" />
 
   <browser:viewlet
-      name="plone.footer"
-      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-      class="plone.app.layout.viewlets.common.FooterViewlet"
-      template="footer.pt"
-      permission="zope2.View"
-      layer="crgis.theme.interfaces.ICustomTheme"
-      />
+    name="plone.footer"
+    manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+    class="plone.app.layout.viewlets.common.FooterViewlet"
+    template="footer.pt"
+    permission="zope2.View"
+    layer="crgis.theme.interfaces.ICustomTheme" />
 
   <browser:page
-      for="*"
-      class=".custom.FrontPage"
-      name="frontpage"
-      template="frontpage.pt"
-      permission="zope2.View"
-      />
+    name="frontpage"
+    for="*"
+    class=".custom.FrontPage"
+    template="frontpage.pt"
+    permission="zope2.View" />
 
   <browser:page
-      for="*"
-      class=".custom.AboutView"
-      name="about"
-      template="about.pt"
-      permission="zope2.View"
-      />
+    name="about"
+    for="*"
+    class=".custom.AboutView"
+    template="about.pt"
+    permission="zope2.View" />
 
   <browser:page
-      for="*"
-      name="wgye_template"
-      class=".main_template.WgyeTemplate"
-      permission="zope2.View"
-      />
+    name="wgye_template"
+    for="*"
+    class=".main_template.WgyeTemplate"
+    permission="zope2.View" />
+
+  <browser:page
+    name="wgye_query"
+    for="*"
+    permission="zope2.View"
+    class=".wangye.WangyeQuery" />
+
+  <browser:page
+    name="wgye_filter"
+    for="*"
+    permission="zope2.View"
+    class=".wangye.FilterMap" />
 
 </configure>

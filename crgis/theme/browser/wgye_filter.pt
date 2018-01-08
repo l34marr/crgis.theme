@@ -1,0 +1,179 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/wgye_template/macros/master"
+    i18n:domain="crgis.theme">
+<body>
+
+<metal:main fill-slot="main">
+<metal:content-core define-macro="content-core">
+
+<div class="nicdark_space30"></div>
+
+<div id="query-filter">
+
+<div class="grid grid_12">
+<h1>全國王爺宮廟互動查詢</h1> 
+<p style="text-align: right">{{ result.length }} 筆符合篩選條件</p>
+</div>
+
+<div id="criteria" class="grid grid_12">
+<h2>篩選條件</h2>
+</div>
+
+<div class="grid grid_12 criterion county-div">
+  <h4>依縣市 鄉鎮市區</h4>
+  <p>
+      <input type="checkbox" id="all-county" class="all" value="all-county">
+      全選/全不選 <a href="javascript:void(0)" class="oc-all">(展開/折合)</a>
+  </p>
+  <div tal:repeat="county view/countyNames">
+    <div class="county">
+        <input type="checkbox" tal:attributes="value python:county[0];
+                                               class python:'county %s' % county[0]">
+        <span tal:content="python:county[0]"></span>
+        <a href="javascript:void(0)" class="oc-all-dist">(展開/折合)</a>
+        <div tal:attributes="class python:'dist %s' % county[0]">
+            <span tal:repeat="item python:county[1]">
+                <input type="checkbox" class="dist" name="wynm" tal:attributes="value python:'%s%s' %(county[0], item)">
+                <span tal:content="python:item"></span>
+            </span>
+<hr>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid grid_12 criterion fname-div">
+  <h4>依姓氏</h4>
+  <p><input type="checkbox" id="all-family-name" class="all" value="all-family-name">
+         全選/全不選
+         <a href="javascript:void(0)" class="oc-all-wy">(展開/折合)</a>
+  </p>
+  <div tal:repeat="item view/wangYeFamilyName">
+    <div class="family-name">
+      <input type="checkbox" class="family-name" name="family-name" tal:attributes="value python:item[0]">
+      <span tal:content="python:item[0]"></span>
+          <a href="javascript:void(0)" class="oc-all-f_name">(展開/折合)</a>
+      <div class="f_name">
+              <span tal:repeat="name python:item[1]">
+                  <input type="checkbox" class="name" name="wynm" tal:attributes="value python:'%s%s' % (item[0], name)">
+                  <span tal:content="python:name"></span>
+              </span>
+      <hr>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid grid_12 criterion">
+<h4>查詢年份(起-迄)</h4>
+  <input class="yearRange range-slider" id="yearRange"
+         name="yearRange" value="1365,2017" style="display:none"/>
+</div>
+
+<div class="grid grid_12 criterion">
+<h4>主祀 / 陪祀</h4>
+  <input type="checkbox" class="hostcmpn" name="hostcmpn" value="hwy"/> 主祀
+  <input type="checkbox" class="hostcmpn" name="hostcmpn" value="cwy"/> 陪祀
+</div>
+
+<div class="grid grid_12 criterion">
+<h4>登錄指定</h4>
+  <input type="checkbox" class="register" name="Subject" value="國定"/> 國定
+  <input type="checkbox" class="register" name="Subject" value="縣市定"/> 縣市定
+</div>
+
+<div class="grid grid_6">
+
+<h2>結果</h2>
+
+<p style="text-align: right">{{ result.length }} 筆符合篩選條件</p>
+  <ul style="list-style: initial">
+    <li style="display: list-item" v-for="item in result">
+      <a v-bind:href="item['url']" target='_blank'>{{ item['title'] }}</a> ({{ item['area1'] }}{{ item['area2'] }})，西元{{ item['founded'] }}，{{ item['hostcmpn'] }} {{ item['wysm'] }}。
+    </li>
+  </ul>
+
+</div>
+
+<div class="grid grid_6">
+
+<h2>地圖</h2>
+
+  <div id="mymap" style="z-index: 10; height:500px; width: 100%"></div>
+
+</div>
+
+</div><!--query-filter-->
+
+
+
+<style>
+div.slider-container {
+    margin: 20px 0 20px 15px
+}
+
+div.dist, div.f_name {
+    display: none;
+}
+
+div#criteria {
+    /*float:left;
+    width:30%; */
+}
+
+div#filter-results {
+    /* width:70% */
+}
+
+div.criterion {
+    /*margin: 20px;*/
+    border: 1px solid;
+    padding: 10px;
+}
+div.criterion span {
+    margin-right:4px;
+    white-space:nowrap;
+}
+</style>
+
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/wangye.js"></script>
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
+
+
+<script>
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var baseMaps = {
+    "1921 日治臺灣堡圖": ly5,
+    "1989 臺灣經建1版地形圖": ly4,
+    "1993 臺灣經建2版地形圖": ly3,
+    "2001 臺灣經建3版地形圖": ly2,
+    "2003 臺灣經建4版地形圖": ly1,
+    "Open Street Map" : osm
+};
+
+var map = L.map('mymap', {
+    center: [23.80, 120.09], // 地圖顯示的中心點
+    zoom: 7,
+    layers: [osm]
+});
+L.control.layers(baseMaps).addTo(map);
+
+// ref from https://github.com/mingtak/hcd.content/blob/master/src/hcd/content/browser/template/climate_listing_view.pt#L200
+// window.group = new L.GeoJSON()
+// window.group.addTo(map)
+</script>
+
+</metal:content-core>
+</metal:main>
+
+</body>
+</html>
