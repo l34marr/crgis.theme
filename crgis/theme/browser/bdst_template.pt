@@ -1,0 +1,247 @@
+<metal:page define-macro="master">
+<metal:block define-slot="top_slot" />
+
+<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />
+
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ xml:lang="en"
+ tal:define="portal_state context/@@plone_portal_state;
+    context_state context/@@plone_context_state;
+    plone_view context/@@plone;
+    lang portal_state/language;
+    view nocall:view | nocall: plone_view;
+    dummy python: plone_view.mark_view(view);
+    portal_url portal_state/portal_url;
+    checkPermission nocall: context/portal_membership/checkPermission;
+    site_properties context/portal_properties/site_properties;
+    ajax_load request/ajax_load | nothing;
+    ajax_include_head request/ajax_include_head | nothing;
+    dummy python:request.RESPONSE.setHeader('X-UA-Compatible', 'IE=edge');"
+ tal:attributes="lang lang;
+    xml:lang lang">
+
+  <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
+    Get the global cache headers located in global_cache_settings.
+  </metal:cache>
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    <metal:baseslot define-slot="base">
+      <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+    </metal:baseslot>
+
+    <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
+        <div tal:replace="structure provider:plone.htmlhead" />
+
+        <link tal:replace="structure provider:plone.htmlhead.links" />
+<link rel="stylesheet" href="++theme++buddhist/css/nicdark_style.css">
+<link rel="stylesheet" href="++theme++buddhist/css/nicdark_responsive.css">
+<link rel="stylesheet" href="++resource++crgis.theme/leaflet/leaflet.css">
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+
+<link rel="shortcut icon" href="++theme++buddhist/img/favicon/favicon.ico"> 
+        <metal:headslot define-slot="head_slot" />
+
+        <tal:comment replace="nothing"> A slot where you can insert CSS in the header from a template </tal:comment>
+        <metal:styleslot define-slot="style_slot" />
+
+        <tal:comment replace="nothing"> This is deprecated, please use style_slot instead. </tal:comment>
+        <!-- metal:cssslot define-slot="css_slot" / -->
+
+        <tal:comment replace="nothing"> A slot where you can insert javascript in the header from a template </tal:comment>
+        <!-- metal:javascriptslot define-slot="javascript_head_slot" / -->
+    </tal:notajax>
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/vue.min.js"></script>
+
+  </head>
+
+<body id="start_nicdark_framework"
+ tal:define="isRTL portal_state/is_rtl;
+             sl python:plone_view.have_portlets('plone.leftcolumn', view);
+             sr python:plone_view.have_portlets('plone.rightcolumn', view);
+             body_class python:plone_view.bodyClass(template, view);"
+ tal:attributes="class body_class;
+                 dir python: isRTL and 'rtl' or 'ltr'">
+
+<div class="nicdark_site">
+<div class="nicdark_site_fullwidth nicdark_clearfix">
+
+  <div class="nicdark_overlay"></div>
+
+ <div class="nicdark_section nicdark_navigation fade-down animated fadeInDown slowup">
+ <div class="nicdark_menu_boxed">
+
+  <div class="nicdark_section nicdark_bg_greydark nicdark_displaynone_responsive">
+    <div class="nicdark_container nicdark_clearfix">
+      <div class="grid grid_6">
+        <div class="nicdark_focus">
+          <h6 class="white">
+            <i class="icon-globe-outline"></i>&nbsp;&nbsp;<a class="white" href="http://crgis.rchss.sinica.edu.tw/">CRGIS</a>
+          </h6>
+        </div>
+      </div>
+      <div class="grid grid_6 right">
+        <div class="nicdark_focus right">
+          <h6 class="white">
+            <i class="icon-lock-1"></i>&nbsp;&nbsp;<a class="white" style="color: #fff !important;" href="/login">LOG IN</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nicdark_space3 nicdark_bg_gradient"></div>
+
+  <div class="nicdark_section nicdark_bg_grey nicdark_shadow nicdark_radius_bottom">
+  <div class="nicdark_container nicdark_clearfix">
+
+    <div class="grid grid_12 percentage">
+
+                        <div class="nicdark_space20"></div>
+
+                        <div class="nicdark_logo nicdark_marginleft10">
+                            <a href="http://crgis.rchss.sinica.edu.tw/buddhist"><img alt="" src="http://gis.rchss.sinica.edu.tw/templates/yt_seasons/images/logo.png"></a>
+                        </div>
+
+                        <nav>
+                            <ul class="nicdark_menu nicdark_margin010 nicdark_padding50">
+
+                                <!-- li class="orange" -->
+                                    <!-- a href="index.html" --><!-- 首頁 --><!-- /a -->
+                                <!-- /li -->
+                                <li class="red">
+                                    <a href="#news"></a>
+                                </li>
+                                <li class="blue">
+                                    <a href="#"></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#overview"></a></li>
+                                        <li><a href="#asset"></a></li>
+                                        <li><a href="#resrc"></a></li>
+                                    </ul>
+                                </li>
+                                <li class="yellow">
+                                    <a href="#"></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#ntl"></a></li>
+                                        <li><a href="#ctl"></a></li>
+                                        <li><a href="#mls"></a></li>
+                                    </ul>
+                                </li>
+                                <li class="green">
+                                    <a href="/wangye/#by-name"></a>
+                                </li>
+                                <li class="orange">
+                                    <a href="/wangye/#by-area"></a>
+                                </li>
+                                <li class="red">
+                                    <a href="#by-name"></a>
+                                </li>
+                                <li class="grey">
+                                    <a href="#about"></a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="nicdark_space20"></div>
+
+    </div>
+
+  </div><!-- nicdark_container -->
+  </div><!-- nicdark_shadow -->
+
+ </div><!-- nicdark_menu_boxed -->
+ </div><!-- nicdark_navigation -->
+
+<!--start section-->
+<section id="nicdark_parallax_title" class="nicdark_section nicdark_imgparallax wy_banner">
+
+    <div class="nicdark_filter greydark">
+
+        <!--start nicdark_container-->
+        <div class="nicdark_container nicdark_clearfix">
+
+            <div class="grid grid_12">
+                <div class="nicdark_space100"></div>
+            </div>
+
+        </div>
+        <!--end nicdark_container-->
+
+    </div>
+     
+</section>
+<!--end section-->
+
+<metal:block define-slot="content">
+
+ <metal:slot define-slot="body">
+<!--start section-->
+<section class="nicdark_section">
+ <!--start nicdark_container-->
+ <div class="nicdark_container nicdark_clearfix">
+   <metal:bodytext define-slot="main">
+
+    <metal:main define-macro="main">
+
+     <div id="content-core">
+      <metal:text define-slot="content-core" tal:content="nothing">
+       Page body text
+      </metal:text>
+     </div>
+     <div tal:replace="structure provider:plone.belowcontentbody" />
+    </metal:main>
+
+   </metal:bodytext>
+ </div>
+ <!--end nicdark_container-->
+</section>
+<!--end section-->
+ </metal:slot>
+
+</metal:block>
+
+<div class="nicdark_space3 nicdark_bg_gradient"></div>
+
+<!--start section-->
+<div class="nicdark_section nicdark_bg_greydark2 nicdark_copyrightlogo">
+
+    <!--start nicdark_container-->
+    <div class="nicdark_container nicdark_clearfix">
+
+        <div class="grid grid_10 nicdark_aligncenter_iphoneland nicdark_aligncenter_iphonepotr">
+            <div class="nicdark_space10"></div>
+            <p class="white"><a href="http://www.rchss.sinica.edu.tw/" target="_blank">中央研究院人文社會科學研究中心</a><span class="grey"><a href="http://gis.rchss.sinica.edu.tw/" target="_blank">地理資訊科學研究專題中心</a></span></p>
+        </div>
+
+        <div class="grid grid_1">
+            <div class="nicdark_focus right nicdark_aligncenter_iphoneland nicdark_aligncenter_iphonepotr">
+                <div class="nicdark_margin10">
+                    <a href="#start_nicdark_framework" class="nicdark_zoom nicdark_internal_link right nicdark_btn_icon nicdark_bg_greydark2 small nicdark_radius white"><i class="icon-up-outline"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end nicdark_container-->
+
+</div>
+<!--end section-->
+
+</div><!-- nicdark_site_fullwidth -->
+</div><!-- nicdark_site -->
+
+</body>
+</html>
+</metal:page>

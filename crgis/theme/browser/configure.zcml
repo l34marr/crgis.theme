@@ -54,6 +54,12 @@
     permission="zope2.View" />
 
   <browser:page
+    name="bdst_template"
+    for="*"
+    class=".main_template.BdstTemplate"
+    permission="zope2.View" />
+
+  <browser:page
     name="wgye_query"
     for="*"
     permission="zope2.View"
