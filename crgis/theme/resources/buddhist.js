@@ -10,18 +10,18 @@ var vm = new Vue({
 })
 
 $(document).ready(function(){
-    // 地區 展開/收合
+    // Toggle for Area Fields
     $('.oc-area').click(function(){
         $('div.area').slideToggle()
     })
 
-    // 類別 展開/收合
+    // Toggle for Category Fields
     $('.oc-ctgr').click(function(){
         $('div.ctgr').slideToggle()
     })
 
 
-    // 勾選縣市，其下各區全選 / 全不選
+    // Check All/None for Area Fields
     $('input.area').change(function(){
         if(this.checked){
             $(this).siblings('div.area').find('input').prop('checked', true)
@@ -30,7 +30,7 @@ $(document).ready(function(){
         }
     })
 
-    // 勾選類別 全選 / 全不選
+    // Check All/None for Category Fields
     $('input.ctgr').change(function(){
         if(this.checked){
             $(this).siblings('div.ctgr').find('input').prop('checked', true)
@@ -60,14 +60,14 @@ $(document).ready(function(){
 
 var marker = []
 var getData = function(){
-        // 地區絛件
+        // Select Result for Area Fields
         items = $('.criterion input.area:checked')
         area = []
         for(i=0; i<items.length; i++){
             area.push(items[i].value)
         }
 
-        // 類別條件
+        // Select Result for Category Fields
         items = $('.criterion input.ctgr:checked')
         bgis_type = []
         for(i=0; i<items.length; i++){
@@ -79,7 +79,6 @@ var getData = function(){
            'bgis_type': bgis_type
         }
 
-//console.log(data)
         $.post(
             '/crgis/@@bdst_query',
             data=data
@@ -91,7 +90,7 @@ var getData = function(){
                 vm.result = jsonData
             }
 
-// leafmap
+        // Leafmap
         if(marker.length > 0){
             for(i=0; i<marker.length; i++){
                 map.removeLayer(marker[i])
@@ -117,5 +116,4 @@ $(document).ready(function(){
     })
 
 })
-
 
