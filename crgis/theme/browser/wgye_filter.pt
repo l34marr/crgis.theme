@@ -92,10 +92,18 @@
 
 <p style="text-align: right">{{ result.length }} 筆符合篩選條件</p>
   <ul style="list-style: initial">
-    <li style="display: list-item" v-for="item in result">
+    <li style="display: list-item" v-for="item in result.slice(page*20, page*20+20)">
       <a v-bind:href="item['url']" target='_blank'>{{ item['title'] }}</a> ({{ item['area1'] }}{{ item['area2'] }})，西元{{ item['founded'] }}，{{ item['hostcmpn'] }} {{ item['wysm'] }}。
     </li>
   </ul>
+
+<div style="margin-top:20px">
+    <a class="page-nav first-page" href="javascript:void(0)" style="padding:10px">第一頁</a>
+    <a class="page-nav pre-page" href="javascript:void(0)" style="padding:10px"> &lt; </a>
+    <span style="padding:10px">{{ page+1 }}</span>
+    <a class="page-nav next-page" href="javascript:void(0)" style="padding:10px"> &gt; </a>
+    <a class="page-nav last-page" href="javascript:void(0)" style="padding:10px">最後一頁</a>
+</div>
 
 </div>
 
