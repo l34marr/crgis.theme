@@ -1,0 +1,141 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/bdst_template/macros/master"
+    i18n:domain="crgis.theme">
+<body>
+
+<metal:main fill-slot="main">
+<metal:content-core define-macro="content-core">
+
+<div class="nicdark_space30"></div>
+
+<div id="query-filter">
+
+<div class="grid grid_12">
+<h1>華人地區佛寺互動查詢</h1> 
+<p style="text-align: right">{{ result.length }} 筆符合篩選條件</p>
+</div>
+
+<div id="criteria" class="grid grid_12">
+<h2>篩選條件</h2>
+</div>
+
+<div class="grid grid_12 criterion area-div">
+  <h4>依地區</h4>
+  <p>
+      <input type="checkbox" id="all-area" class="all" value="all-area">
+      全選/全不選 <a href="javascript:void(0)" class="oc-area">(展開/折合)</a>
+  </p>
+  <div tal:repeat="item view/areaNames">
+    <div class="area">
+      <input type="checkbox" tal:attributes="value python:item;
+                                             class python:'area %s' % item">
+      <span tal:content="python:item"></span>
+    </div>
+  </div>
+</div>
+
+<div class="grid grid_12 criterion ctgr-div">
+  <h4>依類別</h4>
+  <p><input type="checkbox" id="all-ctgr" class="all" value="all-ctgr">
+        全選/全不選 <a href="javascript:void(0)" class="oc-ctgr">(展開/折合)</a>
+  </p>
+  <div tal:repeat="item view/ctgrNames">
+    <div class="ctgr">
+      <input type="checkbox" tal:attributes="value python:item;
+                                             class python:'ctgr %s' % item">
+      <span tal:content="python:item"></span>
+    </div>
+  </div>
+</div>
+
+<div class="grid grid_6">
+
+<h2>結果</h2>
+
+<p style="text-align: right">{{ result.length }} 筆符合篩選條件</p>
+  <ul style="list-style: initial">
+    <li style="display: list-item" v-for="item in result">
+      <a v-bind:href="item['url']" target='_blank'>{{ item['title'] }}</a> ({{ item['area'] }}) {{ item['bgis_type'] }}。
+    </li>
+  </ul>
+
+</div>
+
+<div class="grid grid_6">
+
+<h2>地圖</h2>
+
+  <div id="mymap" style="z-index: 10; height:500px; width: 100%"></div>
+
+</div>
+
+</div><!--query-filter-->
+
+
+
+<style>
+div.slider-container {
+    margin: 20px 0 20px 15px
+}
+
+div.area, div.ctgr {
+    display: initial;
+}
+
+div#criteria {
+    /*float:left;
+    width:30%; */
+}
+
+div#filter-results {
+    /* width:70% */
+}
+
+div.criterion {
+    /*margin: 20px;*/
+    border: 1px solid;
+    padding: 10px;
+}
+div.criterion span {
+    margin-right:4px;
+    white-space:nowrap;
+}
+</style>
+
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/buddhist.js"></script>
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/leaflet/leaflet.js"></script>
+
+
+<script>
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var ly1 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2003&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly2 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_2001&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly3 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1993&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly4 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TM25K_1989&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var ly5 = L.tileLayer('http://gis.sinica.edu.tw/tileserver/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=JM20K_1921&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg');
+var baseMaps = {
+    "2003 臺灣經建4版地形圖": ly1,
+    "Open Street Map" : osm
+};
+
+var map = L.map('mymap', {
+    center: [38.00, 104.09], // 地圖顯示的中心點
+    zoom: 4,
+    layers: [osm]
+});
+L.control.layers(baseMaps).addTo(map);
+
+// ref from https://github.com/mingtak/hcd.content/blob/master/src/hcd/content/browser/template/climate_listing_view.pt#L200
+// window.group = new L.GeoJSON()
+// window.group.addTo(map)
+</script>
+
+</metal:content-core>
+</metal:main>
+
+</body>
+</html>

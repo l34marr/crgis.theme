@@ -22,3 +22,19 @@ class WgyeTemplate(BrowserView):
     def macros(self):
         return self.template.macros
 
+class BdstTemplate(BrowserView):
+    implements(IWgyeTemplate)
+
+    bdst_template = ViewPageTemplateFile('bdst_template.pt')
+
+    def __call__(self):
+        return self.template()
+
+    @property
+    def template(self):
+        return self.bdst_template
+
+    @property
+    def macros(self):
+        return self.template.macros
+

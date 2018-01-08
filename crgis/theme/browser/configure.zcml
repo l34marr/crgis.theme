@@ -71,4 +71,16 @@
     permission="zope2.View"
     class=".wangye.FilterMap" />
 
+  <browser:page
+    name="bdst_query"
+    for="*"
+    permission="zope2.View"
+    class=".buddhist.BuddhistQuery" />
+
+  <browser:page
+    name="bdst_filter"
+    for="*"
+    permission="zope2.View"
+    class=".buddhist.FilterMap" />
+
 </configure>
