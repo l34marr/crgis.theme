@@ -83,4 +83,10 @@
     permission="zope2.View"
     class=".buddhist.FilterMap" />
 
+  <browser:page
+    name="update_data"
+    for="*"
+    permission="zope2.View"
+    class=".update_data.Update" />
+
 </configure>

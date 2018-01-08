@@ -11,10 +11,10 @@ logger = logging.getLogger('crgis.theme')
 LIMIT=20
 
 areaNames = '''[
-"北京", "北京市", "上海", "天津", "重慶", "江蘇", "江蘇省", "浙江", "浙江省", "福建省", "廣東", "廣東省", "湖南", "湖南省", "河南省", "湖北省", "江西", "安徽省", "河北省", "山西省", "陝西省", "雲南省", "貴州省", "四川省", "甘肅省", "青海省", "黑龍江省", "吉林省", "遼寧省", "廣西壯族自治區", "西藏自治區", "內蒙古自治區", "寧夏回族自治區", "新疆維吾爾自治區", "香港特別行政區", "臺灣省", "山東省", "海南省", "澳門特別行政區"
+"北京", "上海", "天津", "重慶", "江蘇", "浙江", "福建省", "廣東", "湖南", "河南省", "湖北省", "江西", "安徽省", "河北省", "山西省", "陝西省", "雲南省", "貴州省", "四川省", "甘肅省", "青海省", "黑龍江省", "吉林省", "遼寧省", "山東省", "海南省", "廣西壯族自治區", "西藏自治區", "內蒙古自治區", "寧夏回族自治區", "新疆維吾爾自治區", "香港特別行政區", "澳門特別行政區", "臺灣"
 ]'''
 ctgrNames = '''[
-"寺", "寺 1", "庵", "廟", "殿", "堂", "洞", "俄康", "協會", "活動點", "不詳", "其他"
+"寺", "庵", "廟", "殿", "堂", "洞", "俄康", "協會", "活動點", "不詳", "其他"
 ]'''
 
 
@@ -30,7 +30,7 @@ class BuddhistQuery(BrowserView):
         area = request.form.get('area[]')
         bgis_type = request.form.get('bgis_type[]')
 
-        query = {'portal_type': 'Buddhism', 'sort_on': 'getId'}
+        query = {'portal_type': 'Buddhist', 'sort_on': 'getId'}
 
         if (not area) and (not bgis_type):
             return None
@@ -43,6 +43,10 @@ class BuddhistQuery(BrowserView):
 
         brains = catalog(query)
         result = []
+
+#       if len(brains) > 1500:
+#           brains = brains[::10]  # unhashable type
+
         for brain in brains:
             item = brain.getObject()
             bgis_type = ''
@@ -50,7 +54,7 @@ class BuddhistQuery(BrowserView):
                 try:
                     bgis_type += bs(item.getText()).find('p', {'class': 'ct'}).text.split(': ')[1]
                 except:
-                    bgis_type += '其它'
+                    bgis_type += '其他'
 
             if brain.zgeo_geometry.get('coordinates', None):
                 lat = float(brain.zgeo_geometry.get('coordinates')[1])

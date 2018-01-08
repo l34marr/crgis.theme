@@ -5,7 +5,8 @@ var vm = new Vue({
     el: '#query-filter',
     data: {
         message: 'Hello Vue!',
-        result: []
+        result: [],
+        page: 0
     }
 })
 
@@ -101,7 +102,7 @@ var getData = function(){
             marker.push(L.marker(vm.result[i]['latlng'],
                         {'title': vm.result[i]['title'], 'riseOnHover': true}));
             marker[i].addTo(map);
-            marker[i].bindPopup('寺廟名稱: <a target="_blank" href="' + vm.result[i]['url'] + '">' + vm.result[i]['title'] + '</a>')
+            marker[i].bindPopup('佛寺名稱: <a target="_blank" href="' + vm.result[i]['url'] + '">' + vm.result[i]['title'] + '</a>')
         }
 
         }).fail(function(){
@@ -117,3 +118,31 @@ $(document).ready(function(){
 
 })
 
+// Pagination
+$(document).ready(function(){
+    $('.page-nav').click(function(){
+        if( $(this).hasClass('first-page') ){
+            vm.page = 0
+        }else if( $(this).hasClass('pre-page') ){
+            vm.page --
+        }else if( $(this).hasClass('next-page') ){
+            vm.page ++
+        }else{
+            vm.page = parseInt(vm.result.length/20)
+        }
+
+        if( vm.page == 0 ){
+            $('.page-nav').css('display', 'initial')
+            $('.first-page').css('display', 'none')
+            $('.pre-page').css('display', 'none')
+        }else if ( vm.page == parseInt(vm.result.length/20) ){
+            $('.page-nav').css('display', 'initial')
+            $('.last-page').css('display', 'none')
+            $('.next-page').css('display', 'none')
+        }else{
+            $('.page-nav').css('display', 'initial')
+        }
+
+
+    })
+})
