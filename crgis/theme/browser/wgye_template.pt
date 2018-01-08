@@ -62,8 +62,8 @@
         <tal:comment replace="nothing"> A slot where you can insert javascript in the header from a template </tal:comment>
         <!-- metal:javascriptslot define-slot="javascript_head_slot" / -->
     </tal:notajax>
-<link rel="stylesheet" tal:attributes="href string:${portal_url}/++resource++crgis.theme/jquery.range.css" />
-<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/jquery.range-min.js"></script>
+<link rel="stylesheet" tal:attributes="href string:${portal_url}/++resource++crgis.theme/jquery/range.css" />
+<script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/jquery/range-min.js"></script>
 <script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++crgis.theme/vue.min.js"></script>
 
   </head>
